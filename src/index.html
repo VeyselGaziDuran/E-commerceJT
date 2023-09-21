@@ -13,65 +13,73 @@
     <!-- Tailwind CSS -->
     <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-vege-white">
     <!--! Header Start-->
     <header>
         <!--? Header-1  -->
-        <div>
+        <div class="bg-vege-blue text-vege-white py-3.5 text-center text-xs">
             <p>
                 SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY - OFF 50%!
-                <a href="shop.html">SHOP NOW</a>
+                <a class="text-vege-white font-semibold" href="shop.html">SHOP NOW</a>
             </p>
         </div>
         <!--? Header-2  -->
-        <div>
-            <div class="container">
+        <div class="container h-24"> 
+            <div class="flex justify-between items-center h-full">
                 <!-- Logo -->
                 <div>
-                    <a href="index.html">LOGO</a>
+                    <a href="index.html" class="font-semibold text-2xl text-vege-black flex uppercase hover:animate-pulse">LOGO</a>
                 </div>
                 <!-- link -->
                 <div>
                     <nav>
-                        <ul>
+                        <ul class=" flex text-vege-black gap-8 text-sm font-medium uppercase tracking-wider">
                             <li>
-                                <a href="shop.html">HOME</a>
-                                <i class="fa-solid fa-chevron-down cursor-pointer"></i>
+                                <a href="shop.html" class="text">
+                                    HOME
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="shop.html">SHOP</a>
-                                <i class="fa-solid fa-chevron-down cursor-pointer"></i>
+                                <a href="shop.html">
+                                    SHOP
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="shop.html">BLOG</a>
-                                <i class="fa-solid fa-chevron-down cursor-pointer"></i>
+                                <a href="shop.html">
+                                    BLOG
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="shop.html">CONTACT</a>
-                                <i class="fa-solid fa-chevron-down cursor-pointer"></i>
+                                <a href="shop.html">
+                                    CONTACT
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <!-- Action -->
                 <div>
-                    <div>
-                        <!-- User Icon -->
+                    <div class="flex gap-4 items-center">
+                    <!-- User Icon -->
                         <a href="#">
-                            <i class="fa-regular fa-user"></i>
-                        </a>
+                            <i data-lucide="user-2" class="w-5 text-vege-black hover:animate-pulse"></i>
+                        </a> 
                         <!-- Search Icon-->
-                        <button>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <button class="bg-transparent border-none">
+                            <i data-lucide="search" class="w-5 text-vege-black hover:animate-pulse"></i>
                         </button>
                         <!-- Faw Icon -->
                         <a href="#">
-                            <i class="fa-regular fa-heart"></i>
+                            <i data-lucide="heart" class="w-5 text-vege-black hover:animate-pulse "></i>
                         </a>
                         <!-- Basket Icon -->
-                        <a href="">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                            <span>0</span>
+                        <a href="" class="relative">
+                            <i data-lucide="shopping-cart" class="w-5 text-vege-black hover:animate-pulse"></i>
+                            <span class="text-vege-white flex text-center justify-center absolute -top-[.5625rem] -right-[.5625rem] w-4 h-4 bg-vege-blue rounded-full text-[.6rem] leading-4 hover:animate-pulse">0</span>
                         </a>
                     </div>
                 </div>
@@ -84,10 +92,10 @@
     
 
     
-
-
-
-
+    <!--? Lucide icon dev  -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>lucide.createIcons();</script>
+    <!--? script js  -->
     <script src="/src/js/script.js"></script>
 </body>
 </html>

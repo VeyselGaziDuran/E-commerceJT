@@ -10,7 +10,7 @@
         @apply list-none m-0 p-0;
     }
     a {
-        @apply no-underline text-black;
+        @apply no-underline text-vege-black;
     }
     h1, h2, h3, h4, h5, h6 {
         @apply uppercase m-0;
