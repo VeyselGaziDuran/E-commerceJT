@@ -15,7 +15,7 @@
 </head>
 <body class="bg-vege-white">
     <!--! Header Start-->
-    <header class="border-b-2 border-vege-grey">
+    <header class="border-b-2 border-vege-grey relative">
         <!--? Header-1  -->
         <div class="bg-vege-blue text-vege-white py-3.5 text-center text-xs">
             <p>
@@ -35,12 +35,12 @@
                     <nav>
                         <ul class="flex h-24 text-vege-black gap-8 text-sm font-medium uppercase tracking-wider">
                             <li class="relative flex items-center group">
-                                <a href="#" id="dropdown-link" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-100 after:transition  after:origin-center after:bottom-0 after:right-0">
+                                <a href="#" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-100 after:transition  after:origin-center after:bottom-0 after:right-0">
                                     HOME
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </a>
                                 <!--? Menu Dropdown wrapper -->
-                                <div class="absolute  top-full -left-7 invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300" id="dropdown">
+                                <div class="absolute  top-full -left-7 invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300">
                                     <ul class="w-56 bg-vege-white border border-vege-grey flex flex-col py-5 text-xs">
                                         <li>
                                             <a href="" class="block py-1 px-8 hover:animate-pulse">Home Clean</a>
@@ -72,11 +72,58 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="relative flex items-center">
+                            <li class="static flex items-center justify-center group">
                                 <a href="shop.html" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0">
                                     SHOP
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </a>
+                                <!--? Shop Dropdown wrapper -->
+                                <div class="absolute flex top-full left-0 right-0 justify-center invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300 ">
+                                    <ul class="flex bg-vege-white border border-vege-grey py-5 text-xs">
+                                        <li>
+                                            <ul>
+                                                <li><a class="font-bold" href="#"><h3 class="block py-3 px-8 hover:animate-pulse">Shop Style</h3></a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Standard</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Full</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Only Categories</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Image Categories</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Sub Categories</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop List</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Hover Style 1</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Hover Style 2</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Hover Style 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><a class="font-bold" href="#"><h3 class="block py-3 px-8 hover:animate-pulse">Shop Style</h3></a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Standard</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Full</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Only Categories</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Image Categories</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><a class="font-bold" href="#"><h3 class="block py-3 px-8 hover:animate-pulse">Shop Style</h3></a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Standard</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Full</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Only Categories</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Image Categories</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Standard</a></li>
+                                                <li><a class="block py-1 px-8 hover:animate-pulse" href="#">Shop Full</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="ms-7">
+                                                <a class="block py-3 px-8 hover:animate-pulse" href="#"><img src="img/mega-menu.jpg" alt="#"></a>
+                                                <h3 class="font-extrabold block py-1 px-8">Lorem, ipsum.</h3>
+                                                <h4 class="font-medium block py-1 px-8">Lorem ipsum dolor sit.</h4>
+                                                <a class="block py-3 px-8" href="#">Shop Now</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="relative flex items-center">
                                 <a href="shop.html" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0">

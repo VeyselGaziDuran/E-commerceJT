@@ -580,6 +580,10 @@ p {
   visibility: hidden;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -602,6 +606,46 @@ p {
 
 .top-full {
   top: 100%;
+}
+
+.-left-16 {
+  left: -4rem;
+}
+
+.left-16 {
+  left: 4rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.ms-7 {
+  margin-inline-start: 1.75rem;
+}
+
+.ms-96 {
+  margin-inline-start: 24rem;
+}
+
+.me-0 {
+  margin-inline-end: 0px;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .block {
@@ -636,6 +680,22 @@ p {
   width: 14rem;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[31\.25rem\] {
+  width: 31.25rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -652,6 +712,10 @@ p {
   justify-content: space-between;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -662,6 +726,10 @@ p {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-none {
+  border-radius: 0px;
 }
 
 .border {
@@ -720,6 +788,11 @@ p {
   padding-bottom: 1.25rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -743,12 +816,30 @@ p {
   line-height: 1rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .uppercase {
