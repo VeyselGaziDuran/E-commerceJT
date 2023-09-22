@@ -15,7 +15,7 @@
 </head>
 <body class="bg-vege-white">
     <!--! Header Start-->
-    <header>
+    <header class="border-b-2 border-vege-grey">
         <!--? Header-1  -->
         <div class="bg-vege-blue text-vege-white py-3.5 text-center text-xs">
             <p>
@@ -24,8 +24,8 @@
             </p>
         </div>
         <!--? Header-2  -->
-        <div class="container h-24"> 
-            <div class="flex justify-between items-center h-full">
+        <div class="container"> 
+            <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <div>
                     <a href="index.html" class="font-semibold text-2xl text-vege-black flex uppercase hover:animate-pulse">LOGO</a>
@@ -33,27 +33,59 @@
                 <!-- link -->
                 <div>
                     <nav>
-                        <ul class=" flex text-vege-black gap-8 text-sm font-medium uppercase tracking-wider">
-                            <li class="relative">
-                                <a href="#" class="hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition  after:duration-500 after:origin-center after:bottom-0 after:right-0">
+                        <ul class="flex h-24 text-vege-black gap-8 text-sm font-medium uppercase tracking-wider">
+                            <li class="relative flex items-center">
+                                <a href="#" id="dropdown-link" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition  after:duration-500 after:origin-center after:bottom-0 after:right-0">
                                     HOME
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </a>
+                                <!--? Menu Dropdown wrapper -->
+                                <div class="absolute  top-full -left-7  hidden" id="dropdown">
+                                    <ul class="w-56 bg-vege-white border border-vege-grey flex flex-col py-5 text-xs">
+                                        <li>
+                                            <a href="" class="block py-1 px-8 hover:animate-pulse">Home Clean</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="block py-1 px-8 hover:animate-pulse">Home Collection</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="block py-1 px-8 hover:animate-pulse">Home Minimal</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="block py-1 px-8 hover:animate-pulse">Home Modern</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="block py-1 px-8 hover:animate-pulse">Home Parallax</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="block py-1 px-8 hover:animate-pulse">Home Stron</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="block py-1 px-8 hover:animate-pulse">Home Style</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="block py-1 px-8 hover:animate-pulse">Home Unique</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="block py-1 px-8 hover:animate-pulse">Home RTL</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li class="relative">
-                                <a href="shop.html" class="hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0">
+                            <li class="relative flex items-center">
+                                <a href="shop.html" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0">
                                     SHOP
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </a>
                             </li>
-                            <li class="relative">
-                                <a href="shop.html" class="hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0">
+                            <li class="relative flex items-center">
+                                <a href="shop.html" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0">
                                     BLOG
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </a>
                             </li>
-                            <li class="relative">
-                                <a href="#" class="hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-[2px] after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0 ">
+                            <li class="relative flex items-center">
+                                <a href="#" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-[2px] after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0 ">
                                     CONTACT
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </a>
