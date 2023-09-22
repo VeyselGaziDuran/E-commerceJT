@@ -34,13 +34,13 @@
                 <div>
                     <nav>
                         <ul class="flex h-24 text-vege-black gap-8 text-sm font-medium uppercase tracking-wider">
-                            <li class="relative flex items-center">
-                                <a href="#" id="dropdown-link" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition  after:duration-500 after:origin-center after:bottom-0 after:right-0">
+                            <li class="relative flex items-center group">
+                                <a href="#" id="dropdown-link" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-100 after:transition  after:origin-center after:bottom-0 after:right-0">
                                     HOME
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </a>
                                 <!--? Menu Dropdown wrapper -->
-                                <div class="absolute  top-full -left-7  hidden" id="dropdown">
+                                <div class="absolute  top-full -left-7 invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300" id="dropdown">
                                     <ul class="w-56 bg-vege-white border border-vege-grey flex flex-col py-5 text-xs">
                                         <li>
                                             <a href="" class="block py-1 px-8 hover:animate-pulse">Home Clean</a>
