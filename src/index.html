@@ -15,9 +15,9 @@
 </head>
 <body class="bg-vege-white">
     <!--*********************************************************************! Header Start *********************************************************************-->
-    <header class="border-b-2 border-vege-grey relative">
+    <header class="border-b-2 border-vege-grey relative ">
         <!--? Header-1  -->
-        <div class="bg-vege-blue py-3.5 text-center text-xs">
+        <div class="bg-vege-blue py-3.5 text-center text-xs w-full">
             <p class="text-vege-white">
                 SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY - OFF 50%!
                 <a class="text-vege-white font-semibold" href="shop.html">SHOP NOW</a>
@@ -25,13 +25,13 @@
         </div>
         <!--? Header-2  -->
         <div class="container"> 
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center invisible md:visible">
                 <!-- Logo -->
                 <div>
                     <a href="index.html" class="font-semibold text-2xl text-vege-black flex uppercase hover:animate-pulse">LOGO</a>
                 </div>
                 <!-- link -->
-                <div>
+                <div class="">
                     <nav>
                         <ul class="flex h-24 text-vege-black gap-8 text-sm font-medium uppercase tracking-wider">
                             <li class="relative flex items-center group">
@@ -140,8 +140,10 @@
                         </ul>
                     </nav>
                 </div>
+                <!--? Header Mobile -->
+                <i data-lucide="menu" class="absolute md:invisible visible"></i>
                 <!-- Action -->
-                <div>
+                <div class="visible absolute right-0 mr-3">
                     <div class="flex gap-4 items-center">
                     <!-- User Icon -->
                         <a href="#">
@@ -174,7 +176,7 @@
     <!-- <input type="text" class="bg-vege-white outline-none border-[1px] border-vege-grey focus:border-vege-black p-2 pe-4"> -->
 
     <!--*********************************************************************! Modal Search Start *********************************************************************-->
-    <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
+    <div class=" invisible   absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
         <div class="max-w-[800px] w-full h-auto bg-vege-white z-50 fixed p-8 rounded-md drop-shadow-2xl">
             <h3 class="font-semibold text-3xl normal-case">Search for products</h3>
             <p class="text-sm text-opacity-80 pb-4 border-vege-grey">Start typing to see products you are looking for.</p>

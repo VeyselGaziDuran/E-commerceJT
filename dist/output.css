@@ -568,14 +568,18 @@ p {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
+}
+
+.visible {
+  visibility: visible;
 }
 
 .invisible {
@@ -656,6 +660,10 @@ p {
   margin-right: 0.5rem;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .ms-7 {
   margin-inline-start: 1.75rem;
 }
@@ -692,8 +700,8 @@ p {
   height: 1rem;
 }
 
-.h-96 {
-  height: 24rem;
+.h-80 {
+  height: 20rem;
 }
 
 .h-auto {
@@ -702,30 +710,6 @@ p {
 
 .h-full {
   height: 100%;
-}
-
-.h-64 {
-  height: 16rem;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-56 {
-  height: 14rem;
-}
-
-.h-8 {
-  height: 2rem;
 }
 
 .w-4 {
@@ -764,16 +748,8 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .flex-wrap-reverse {
@@ -802,10 +778,6 @@ p {
 
 .overflow-auto {
   overflow: auto;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
 }
 
 .truncate {
@@ -869,14 +841,6 @@ p {
 
 .border-b-2 {
   border-bottom-width: 2px;
-}
-
-.border-l-2 {
-  border-left-width: 2px;
-}
-
-.border-r-2 {
-  border-right-width: 2px;
 }
 
 .border-none {
@@ -1246,19 +1210,9 @@ p {
   background-color: rgb(235 100 64 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-vege-blue:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(73 113 116 / var(--tw-bg-opacity));
-}
-
 .hover\:text-vege-blue:hover {
   --tw-text-opacity: 1;
   color: rgb(73 113 116 / var(--tw-text-opacity));
-}
-
-.hover\:text-vege-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(239 245 245 / var(--tw-text-opacity));
 }
 
 .after\:hover\:scale-x-100:hover::after {
@@ -1287,6 +1241,14 @@ p {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:invisible {
+    visibility: hidden;
+  }
+
   .md\:w-\[40\%\] {
     width: 40%;
   }

@@ -1,0 +1,8 @@
+[build]
+base = "src"
+publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/src/index.html"
+  status = 200
