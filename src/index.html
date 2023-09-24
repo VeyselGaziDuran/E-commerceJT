@@ -284,7 +284,7 @@
     <!-- <input type="text" class="bg-vege-white outline-none border-[1px] border-vege-grey focus:border-vege-black p-2 pe-4"> -->
 
     <!--*********************************************************************! Modal Search Start *********************************************************************-->
-    <div class=" absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
+    <div class=" invisible absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
         <div class="max-w-[800px] w-full h-auto bg-vege-white z-50 fixed p-8 rounded-md drop-shadow-2xl">
             <h3 class="font-semibold text-3xl normal-case">Search for products</h3>
             <p class="text-sm text-opacity-80 pb-4 border-vege-grey">Start typing to see products you are looking for.</p>
@@ -299,16 +299,39 @@
                     <h3 class="font-semibold text-base">RESULTS FROM PRODUCT</h3>
                 </div>
                 <!--? items -->
-                <div class=" grid grid-cols-2 h-80 w-auto overflow-auto ">
-                    <a href="#" class="flex text-center truncate  h-28 flex-wrap-reverse p-4 w-full border hover:bg-vege-grey duration-300">
-                        <img class="h-24 w-auto pt-4 pr-6" src="img/products/product1/1.png" alt="">
-                        <div class="pt-7 flex flex-col text-left">
-                            <h4 class="max-w[65px] w-full">Analogue Resin Strap</h4>
-                            <span class="text-sm opacity-50 my-1">SKU: PD0016</span>
-                            <span class="text-vege-red font-bold text-md">$108</span>
+                <div class=" grid grid-cols-1 md:grid-cols-2 h-80 w-auto overflow-auto ">
+                    <a href="#" class="flex text-center truncate  h-28 justify-center items-center  p-4 w-full border hover:bg-vege-grey duration-300">
+                        <img class="h-24 w-auto left-0 pt-2 pb-2 pr-6" src="img/products/product1/1.png" alt="">
+                        <div class="pt-7 flex flex-col text-left truncate">
+                            <h4 class="max-w[30px] md:max-w[65px] w-full">Analogue Resin Strap</h4>
+                            <span class="text-xs md:text-sm opacity-50 ">SKU: PD0016</span>
+                            <span class="text-vege-red  font-medium md:font-bold text-md pb-3">$108</span>
                         </div>
                     </a>
-                    
+                    <a href="#" class="flex text-center truncate  h-28 justify-center items-center  p-4 w-full border hover:bg-vege-grey duration-300">
+                        <img class="h-24 w-auto left-0 pt-2 pb-2 pr-6" src="img/products/product1/1.png" alt="">
+                        <div class="pt-7 flex flex-col text-left truncate">
+                            <h4 class="max-w[30px] md:max-w[65px] w-full">Analogue Resin Strap </h4>
+                            <span class="text-xs md:text-sm opacity-50 ">SKU: PD0016</span>
+                            <span class="text-vege-red  font-medium md:font-bold text-md pb-3">$108</span>
+                        </div>
+                    </a>
+                    <a href="#" class="flex text-center truncate  h-28 justify-center items-center  p-4 w-full border hover:bg-vege-grey duration-300">
+                        <img class="h-24 w-auto left-0 pt-2 pb-2 pr-6" src="img/products/product1/1.png" alt="">
+                        <div class="pt-7 flex flex-col text-left truncate">
+                            <h4 class="max-w[30px] md:max-w[65px] w-full">Analogue Resin Strap</h4>
+                            <span class="text-xs md:text-sm opacity-50 ">SKU: PD0016</span>
+                            <span class="text-vege-red  font-medium md:font-bold text-md pb-3">$108</span>
+                        </div>
+                    </a>
+                    <a href="#" class="flex text-center truncate  h-28 justify-center items-center  p-4 w-full border hover:bg-vege-grey duration-300">
+                        <img class="h-24 w-auto left-0 pt-2 pb-2 pr-6" src="img/products/product1/1.png" alt="">
+                        <div class="pt-7 flex flex-col text-left truncate">
+                            <h4 class="max-w[30px] md:max-w[65px] w-full">Analogue Resin Strap</h4>
+                            <span class="text-xs md:text-sm opacity-50 ">SKU: PD0016</span>
+                            <span class="text-vege-red  font-medium md:font-bold text-md pb-3">$108</span>
+                        </div>
+                    </a>
                 </div>
             </div>
             <i class="absolute top-2 end-2 cursor-pointer" data-lucide="x-circle"></i>
