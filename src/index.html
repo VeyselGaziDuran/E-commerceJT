@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
-    <link href="/src/output.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body class="bg-vege-white">
     <!--*********************************************************************! Header Start *********************************************************************-->
@@ -26,12 +26,16 @@
         <!--? Header-2  -->
         <div class="container"> 
             <div class="flex justify-between items-center">
+                <!--********************! Header Mobile ********************-->
+                <div class="md:hidden block">
+                    <i data-lucide="menu" class="flex justify-between items-center md:w-5 md:h-5 w-[1.2rem] h-[1.2rem]"></i>
+                </div>
                 <!-- Logo -->
                 <div class="">
-                    <a href="index.html" class="font-semibold text-2xl text-vege-black flex uppercase hover:animate-pulse">LOGO</a>
+                    <a href="index.html" class="py-5 font-semibold text-xl md:text-2xl text-vege-black flex uppercase hover:animate-pulse">LOGO</a>
                 </div>
                 <!-- link -->
-                <div class="">
+                <div class="hidden md:block">
                     <nav>
                         <ul class="flex h-24 text-vege-black gap-8 text-sm font-medium uppercase tracking-wider">
                             <li class="relative flex items-center group">
@@ -40,7 +44,7 @@
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </a>
                                 <!--? Menu Dropdown wrapper -->
-                                <div class="absolute  top-full -left-7 invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300">
+                                <div class="absolute top-full -left-7 invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300">
                                     <ul class="w-56 rounded-b-md bg-vege-white border border-vege-grey flex flex-col py-5 text-xs">
                                         <li>
                                             <a href="" class="block py-1 px-8 hover:animate-pulse">Home Clean</a>
@@ -142,22 +146,22 @@
                 </div>
                 <!-- Action -->
                 <div>
-                    <div class="flex gap-4 items-center">
+                    <div class="flex md:gap-4 gap-2 items-center">
                     <!-- User Icon -->
                         <a href="#">
-                            <i data-lucide="user-2" class="w-5 text-vege-black hover:animate-pulse"></i>
+                            <i data-lucide="user-2" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
                         </a> 
                         <!-- Search Icon-->
                         <button class="bg-transparent border-none">
-                            <i data-lucide="search" class="w-5 text-vege-black hover:animate-pulse"></i>
+                            <i data-lucide="search" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
                         </button>
                         <!-- Faw Icon -->
                         <a href="#">
-                            <i data-lucide="heart" class="w-5 text-vege-black hover:animate-pulse "></i>
+                            <i data-lucide="heart" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse "></i>
                         </a>
                         <!-- Basket Icon -->
                         <a href="" class="relative">
-                            <i data-lucide="shopping-cart" class="w-5 text-vege-black hover:animate-pulse"></i>
+                            <i data-lucide="shopping-cart" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
                             <span class="text-vege-white flex text-center justify-center absolute -top-[.5625rem] -right-[.5625rem] w-4 h-4 bg-vege-red rounded-full text-[.6rem] leading-4 hover:animate-pulse">0</span>
                         </a>
                     </div>
@@ -165,8 +169,6 @@
             </div>
         </div>
     </header>
-    <!--! Header Mobile -->
-        <i data-lucide="menu" class="absolute md:invisible visible"></i>
     <!--*********************************************************************! Header End *********************************************************************-->
     
     <!-- <div class="container">

@@ -1241,6 +1241,14 @@ p {
     visibility: hidden;
   }
 
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-\[40\%\] {
     width: 40%;
   }
