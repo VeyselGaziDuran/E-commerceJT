@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/src/css/output.css" rel="stylesheet">
 </head>
 <body class="bg-vege-white">
     <!--*********************************************************************! Header Start *********************************************************************-->
-    <header class="border-b-2 border-vege-grey relative ">
+    <header class="border-b-2 border-vege-grey relative">
         <!--? Header-1  -->
-        <div class="bg-vege-blue py-3.5 text-center text-xs w-full">
+        <div class="bg-vege-blue py-3.5 text-center text-xs">
             <p class="text-vege-white">
                 SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY - OFF 50%!
                 <a class="text-vege-white font-semibold" href="shop.html">SHOP NOW</a>
@@ -25,9 +25,9 @@
         </div>
         <!--? Header-2  -->
         <div class="container"> 
-            <div class="flex justify-between items-center invisible md:visible">
+            <div class="flex justify-between items-center">
                 <!-- Logo -->
-                <div>
+                <div class="">
                     <a href="index.html" class="font-semibold text-2xl text-vege-black flex uppercase hover:animate-pulse">LOGO</a>
                 </div>
                 <!-- link -->
@@ -140,10 +140,8 @@
                         </ul>
                     </nav>
                 </div>
-                <!--? Header Mobile -->
-                <i data-lucide="menu" class="absolute md:invisible visible"></i>
                 <!-- Action -->
-                <div class="visible absolute right-0 mr-3">
+                <div>
                     <div class="flex gap-4 items-center">
                     <!-- User Icon -->
                         <a href="#">
@@ -167,6 +165,8 @@
             </div>
         </div>
     </header>
+    <!--! Header Mobile -->
+        <i data-lucide="menu" class="absolute md:invisible visible"></i>
     <!--*********************************************************************! Header End *********************************************************************-->
     
     <!-- <div class="container">
