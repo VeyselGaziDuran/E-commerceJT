@@ -18,5 +18,8 @@
     p{
         @apply m-0;
     }
+    .textwhite path{
+        @apply text-vege-white;
+    }
 }
 

@@ -15,7 +15,7 @@
 </head>
 <body class="bg-vege-white">
     <!--*********************************************************************! Header Start *********************************************************************-->
-    <header class="border-b-2 border-vege-grey relative">
+    <header class="border-b-2 border-vege-grey relative ">
         <!--? Header-1  -->
         <div class="bg-vege-blue py-3.5 text-center text-xs">
             <p class="text-vege-white">
@@ -342,44 +342,44 @@
 
     <!--*********************************************************************! Slider Start *********************************************************************-->
     <!-- slider -->
-    <section>
+    <section class="relative">
         <!-- slider elements -->
         <div>
             <!-- slider items -->
             <div class="relative h-[calc(100vh-129.6px)]  md:h-[calc(100vh-141.6px)] flex items-center ">
                 <!-- slider image -->
                 <div>
-                    <img src="img/slider/slider1.jpg" class="-z-50 object-center object-cover absolute top-0 left-0 w-full h-full" alt="#">
+                    <img src="img/slider/slider1.jpg" class="-z-10 lg:object-none lg:object-left-bottom object-cover absolute top-0 left-0 w-full h-full" alt="#">
                 </div>
                 <!-- slider container -->
-                <div class="container">
+                <div class="container z-10">
                     <p class="text-lg font-medium">SUMMER 2023</p>
                     <h2 class="text-6xl">Save up to 70%</h2>
-                    <a class="absolute text-white hover:text-vege-black bg-vege-blue hover:bg-vege-grey focus:ring-4 rounded-md text-sm px-7 py-4 mr-2 mb-2 mt-3 duration-300" href="#">Explore Now</a>
+                    <a class="absolute cursor-pointer text-white hover:text-vege-black bg-vege-blue hover:bg-vege-grey focus:ring-4 rounded-md text-sm px-7 py-4 mr-2 mb-2 mt-3 duration-300" href="#">Explore Now</a>
                 </div>
-                <!-- slidee buttons -->
-                <div>
-                    <!-- right button  -->
-                    <button>
-                        <i data-lucide="chevrons-left"></i>
-                    </button>
-                    <!-- left button  -->
-                    <button>
-                        <i data-lucide="chevrons-right"></i>
-                    </button>
-                </div>
-                <!-- slider dots -->
-                <div>
-                    <button>
-                        <span></span>
-                    </button>
-                    <button>
-                        <span></span>
-                    </button>
-                    <button>
-                        <span></span>
-                    </button>
-                </div>
+            </div>
+            <!-- slider buttons -->
+            <div class="flex absolute w-full h-full top-0 text-center justify-between px-3">
+                <!-- right button  -->
+                <button class="z-50">
+                    <i data-lucide="chevron-left" class="md:w-12 md:h-12 hover:textwhite bg-vege-grey hover:bg-vege-blue rounded-full duration-300 opacity-30 hover:opacity-100"></i>
+                </button>
+                <!-- left button  -->
+                <button class="z-50">
+                    <i data-lucide="chevron-right" class="md:w-12 md:h-12 hover:textwhite bg-vege-grey hover:bg-vege-blue rounded-full duration-300 opacity-30 hover:opacity-100"></i>
+                </button>
+            </div>
+            <!-- slider dots -->
+            <div class="absolute w-full flex items-center gap-2 justify-center border-none bottom-5">
+                <button>
+                    <span class="w-3 h-3 bg-vege-blue opacity-40 hover:opacity-0 duration-300 block rounded-full"></span>
+                </button>
+                <button>
+                    <span class="w-3 h-3 bg-vege-blue opacity-40 hover:opacity-0 duration-300 block rounded-full"></span>
+                </button>
+                <button>
+                    <span class="w-3 h-3 bg-vege-blue opacity-40 hover:opacity-0 duration-300 block rounded-full"></span>
+                </button>
             </div>
         </div>
     </section>
