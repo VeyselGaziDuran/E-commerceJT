@@ -36,7 +36,7 @@
                 </div>
                 <!-- link -->
                 <div class="hidden md:block">
-                    <nav>
+                    <nav class="">
                         <ul class="flex h-24 text-vege-black gap-8 text-sm font-medium uppercase tracking-wider">
                             <li class="relative flex items-center group">
                                 <a href="#" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-100 after:transition  after:origin-center after:bottom-0 after:right-0">
@@ -44,7 +44,7 @@
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </a>
                                 <!--? Menu Dropdown wrapper -->
-                                <div class="absolute top-full -left-7 invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300">
+                                <div class="z-50 absolute top-full -left-7 invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300">
                                     <ul class="w-56 rounded-b-md bg-vege-white border border-vege-grey flex flex-col py-5 text-xs">
                                         <li>
                                             <a href="" class="block py-1 px-8 hover:animate-pulse">Home Clean</a>
@@ -82,7 +82,7 @@
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </a>
                                 <!--? Shop Dropdown wrapper -->
-                                <div class="absolute flex top-full left-0 right-0 justify-center invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300 ">
+                                <div class="z-50 absolute flex top-full left-0 right-0 justify-center invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300 ">
                                     <ul class="flex rounded-b-md bg-vege-white border border-vege-grey py-5 text-xs">
                                         <li>
                                             <ul>
@@ -361,11 +361,11 @@
             <!-- slider buttons -->
             <div class="flex absolute w-full h-full top-0 text-center justify-between px-3">
                 <!-- right button  -->
-                <button class="z-50">
+                <button class="z-20">
                     <i data-lucide="chevron-left" class="md:w-12 md:h-12 hover:textwhite bg-vege-grey hover:bg-vege-blue rounded-full duration-300 opacity-30 hover:opacity-100"></i>
                 </button>
                 <!-- left button  -->
-                <button class="z-50">
+                <button class="z-20">
                     <i data-lucide="chevron-right" class="md:w-12 md:h-12 hover:textwhite bg-vege-grey hover:bg-vege-blue rounded-full duration-300 opacity-30 hover:opacity-100"></i>
                 </button>
             </div>
