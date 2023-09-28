@@ -24,6 +24,7 @@ module.exports = {
          'vege-blue': '#497174',
          'vege-black': '#112B3C',
          'vege-red': '#EB6440',
+         'vege-gold': '#ffd700',
        },
 
       // spacing: {
