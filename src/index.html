@@ -463,22 +463,22 @@
             </div>
             <!-- Products Title End -->
             <!-- Products Wrapper Start -->
-            <div>
+            <div class="">
                 <!-- Products List -->
-                <ul>
+                <ul class="grid grid-cols-4 ">
                     <!-- Products List item -->
-                    <li class="">
+                    <li class="text-center bg-vege-grey rounded-md relative">
                         <!-- product image -->
                         <div class="">
-                            <a href="">
-                                <img src="/src/img/products/product1/1.png" alt="">
+                            <a href="" class="">
+                                <img src="/src/img/products/product1/1.png" alt="" class="w-full h-full flex p-4">
                             </a>
                         </div>
                         <!-- product info -->
                         <div class="">
-                            <a href="">Analogue Resin Strap</a>
+                            <a href="" class="font-semibold text-sm mt-4">Analogue Resin Strap</a>
                             <!-- Product Star-->
-                            <ul class="flex">
+                            <ul class="flex text-center justify-center my-2 gap-[.125rem]">
                                 <li>
                                     <i data-lucide="star" class="fill-vege-gold"></i>
                                 </li>
@@ -496,24 +496,33 @@
                                 </li>
                             </ul>
                             <!-- Product Price-->
-                            <strong class="text-vege-red">$108.00</strong>
-                            <s>$165</s>
+                            <div class="flex justify-center text-center gap-2">
+                                <strong class="text-vege-red font-medium">$108.00</strong>
+                                <s class="text-vege-blue text-md font-thin">$165.00</s>
+                            </div>
+                            
                             <!-- discount -->
-                            <span class="absolute top-2 right-2">35%</span>
+                            <div class="absolute text-center justify-center flex top-3 right-3 w-10 h-10 ">
+                                <span class="absolute text-vege-white py-3 px-2 bg-vege-red text-xs rounded-full">35%</span>
+                            </div>
                             <!-- Product Buttons -->
-                            <div>
-                                <button>
+                            <div class="">
+                                <button class="">
                                     <i data-lucide="shopping-cart"></i>
                                 </button>
                                 <button>
                                     <i data-lucide="heart"></i>
                                 </button>
-                                <a href="">
-                                    <i data-lucide="eye"></i>
-                                </a>
-                                <a href="">
-                                    <i data-lucide="share-2"></i>
-                                </a>
+                                <button>
+                                    <a href="">
+                                        <i data-lucide="eye"></i>
+                                    </a>
+                                </button>
+                                <button>
+                                    <a href="">
+                                        <i data-lucide="share-2"></i>
+                                    </a>
+                                </button>
                             </div>
                         </div>
                     </li>
