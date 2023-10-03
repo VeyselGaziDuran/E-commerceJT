@@ -719,6 +719,10 @@ p {
   margin-bottom: 1.25rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mb-9 {
   margin-bottom: 2.25rem;
 }
@@ -729,6 +733,14 @@ p {
 
 .ms-7 {
   margin-inline-start: 1.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-2 {
@@ -749,14 +761,6 @@ p {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .block {
@@ -785,6 +789,10 @@ p {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .h-24 {
@@ -827,12 +835,12 @@ p {
   height: 100vh;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .w-10 {
   width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-3 {
@@ -859,6 +867,10 @@ p {
   width: 100%;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .w-\[77\%\] {
   width: 77%;
 }
@@ -869,22 +881,6 @@ p {
 
 .w-full {
   width: 100%;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-\[10\%\] {
-  width: 10%;
-}
-
-.w-\[\%\] {
-  width: %;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .translate-x-4 {
@@ -968,6 +964,10 @@ p {
 
 .gap-\[\.125rem\] {
   gap: .125rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .overflow-auto {
@@ -1104,14 +1104,6 @@ p {
   background-image: url('../img/campaigns/banner4.png');
 }
 
-.bg-\[url\(\'\.\.\/img\/\.png\'\)\] {
-  background-image: url('../img/.png');
-}
-
-.bg-\[url\(\'\.\.\/img\/single-campa\'\)\] {
-  background-image: url('../img/single-campa');
-}
-
 .bg-\[url\(\'\.\.\/img\/single-campaign\.png\'\)\] {
   background-image: url('../img/single-campaign.png');
 }
@@ -1145,28 +1137,20 @@ p {
   padding: 0.625rem;
 }
 
-.p-4 {
-  padding: 1rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
-.p-8 {
-  padding: 2rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .p-5 {
   padding: 1.25rem;
 }
 
-.p-52 {
-  padding: 13rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
-}
-
-.p-36 {
-  padding: 9rem;
+.p-8 {
+  padding: 2rem;
 }
 
 .px-2 {
@@ -1219,11 +1203,6 @@ p {
   padding-bottom: 0.5rem;
 }
 
-.py-2\.5 {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1232,6 +1211,11 @@ p {
 .py-3\.5 {
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
+}
+
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 .py-4 {
@@ -1249,9 +1233,9 @@ p {
   padding-bottom: 50px;
 }
 
-.py-36 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pb-1 {
@@ -1302,6 +1286,11 @@ p {
   text-align: center;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1341,9 +1330,9 @@ p {
   line-height: 1rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -1595,10 +1584,6 @@ p {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-.hover\:whitespace-nowrap:hover {
-  white-space: nowrap;
-}
-
 .hover\:bg-vege-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(73 113 116 / var(--tw-bg-opacity));
@@ -1680,16 +1665,8 @@ p {
 }
 
 @media (min-width: 640px) {
-  .sm\:flex {
-    display: flex;
-  }
-
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .sm\:flex-nowrap {
-    flex-wrap: nowrap;
   }
 
   .sm\:justify-between {
@@ -1742,6 +1719,10 @@ p {
     width: 1.25rem;
   }
 
+  .md\:w-\[15\%\] {
+    width: 15%;
+  }
+
   .md\:w-\[40\%\] {
     width: 40%;
   }
@@ -1752,10 +1733,6 @@ p {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[15\%\] {
-    width: 15%;
   }
 
   .md\:max-w-\[800px\] {
