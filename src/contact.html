@@ -343,39 +343,35 @@
         <!-- contact top -->
         <div>
             <!-- contact map  -->
-            <div>
+            <div class="shadow-sm">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770803.0593236807!2d28.352828058770775!3d41.004479591356755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1696423948898!5m2!1str!2str" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <!-- contact bottom -->
-        <div>
+        <div class="my-3">
             <div class="container">
                 <!-- contact title  -->
-                <div>
-                    <h4>Contact with us</h4>
-                    <h2>Get In Touch</h2>
-                    <p>In hac habitasse platea dictumst. Pellentesque viverra sem nec orci lacinia, in bibendum urna mollis. Quisque nunc lacus, varius vel leo a, pretium lobortis metus. Vivamus consectetur consequat justo.</p>
+                <div class="w-4/5">
+                    <h4 class="text-vege-red font-medium text-md normal-case">Contact with us</h4>
+                    <h2 class="font-semibold text-lg">Get In Touch</h2>
+                    <p class="text-sm">In hac habitasse platea dictumst. Pellentesque viverra sem nec orci lacinia, in bibendum urna mollis. Quisque nunc lacus, varius vel leo a, pretium lobortis metus. Vivamus consectetur consequat justo.</p>
                 </div>
                 <!-- contact elemets -->
-                <div>
-                    <form action="">
-                        <div>
+                <div class="flex mt-10 justify-between flex-wrap md:flex-nowrap gap-8 md:gap-52">
+                    <form action="" class="flex flex-wrap gap-5">
+                        <div class="flex flex-col w-[calc(50%-10px)] text-xs">
                             <label for="">
                                 Your Name
-                                <span>*</span>
-                                
                             </label>
                             <input class="border py-2 px-4" type="text" required>
                         </div>
-                        <div>
+                        <div class="flex flex-col w-[calc(50%-10px)] text-xs">
                             <label for="">
-                                Your email
-                                <span>*</span>
-                                
+                                Your email   
                             </label>
                             <input class="border py-2 px-4" type="text" required>
                         </div>
-                        <div>
+                        <div class="flex flex-col w-full text-xs">
                             <label for="">
                                 Subject
                                 <span>*</span>
@@ -383,30 +379,29 @@
                             </label>
                             <input class="border py-2 px-4" type="text" required>
                         </div>
-                        <div>
+                        <div class="flex flex-col flex-1 basis-full text-xs">
                             <label for="">
                                 Your Message
                                 <span>*</span>
-                                
                             </label>
-                            <textarea class="overflow-auto border py-2 px-4""></textarea>
+                            <textarea class="overflow-auto border py-2 px-2""></textarea>
                         </div>
-                        <a class="bg-vege-grey px-4 rounded-md hover:bg-vege-red duration-300">Send Message</a>
+                        <button class="bg-vege-blue text-vege-white px-4 py-2 rounded-md hover:bg-vege-grey hover:text-vege-black duration-300">Send Message</button>
                     </form>
                     <!-- contact info -->
-                    <div>
-                        <div>
-                            <h4>Clotya Store</h4>
-                            <p>123 Street, Old Trafford, New South London , UK</p>
+                    <div class="basis-2/4 md:block flex md:flex-wrap flex-nowrap gap-5">
+                        <div class="mb-3">
+                            <h4 class="mb-3 font-medium text-sm">Clotya Store</h4>
+                            <p class="text-xs">123 Street, Old Trafford, New South London , UK</p>
+                        </div>
+                        <div class="mb-3">
+                            <p class="text-sm">Phone: <a tel: 545 545 54 54">(+800) 1234 5678 90</a> </p>
+                            <p class="text-sm">Email: <a href="mailto:info@example.com">info@example.com</a></p>
                         </div>
                         <div>
-                            <p>Phone: <a tel: 545 545 54 54">(+800) 1234 5678 90</a> </p>
-                            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
-                        </div>
-                        <div>
-                            <h4>Opening Hours</h4>
-                            <p>Monday - Friday : 9am - 5pm</p>
-                            <p>Weekend Closed</p>
+                            <h4 class="mb-3 font-medium text-sm">Opening Hours</h4>
+                            <p class="text-xs">Monday - Friday : 9am - 5pm</p>
+                            <p class="text-xs">Weekend Closed</p>
                         </div>
                     </div>
                 </div>
