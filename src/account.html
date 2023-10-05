@@ -340,74 +340,71 @@
     <section>
         <div class="container">
             <!-- account wrapper  -->
-            <div  class="mt-16 flex items-center justify-between">
+            <div  class="mt-16 flex gap-12 justify-between md:flex-row flex-col ">
                 <!-- account column -->
-                <div>
-                    <h2 class="font-medium text-lg normal-case">Login</h2>
-                    <form class="flex flex-wrap gap-5"> 
+                <div class="flex-1">
+                    <h2 class="font-medium text-lg normal-case mb-3">Login</h2>
+                    <form class="flex flex-col gap-4"> 
                         <div>
-                            <label for="">
+                            <label class="flex flex-col" for="">
                                 <span class="text-xs">Username or email address</span>
                                 <input class="w-full" type="text">
                             </label>
                         </div>
                         <div>
-                            <label for="">
+                            <label class="flex flex-col" for="">
                                 <span class="text-xs">Password</span>
                                 <input class="w-full" type="text">
                             </label>
                         </div>
-                        <div class="mt-7">
-                            <label for="">
+                        <div class="">
+                            <label class="" for="">
                                 <input type="checkbox">
                                 <span class="text-xs">Remember me</span>
                             </label>
                         </div>    
                     </form>
-                    <div class="mt-10 flex ">
-                        <button class="bg-vege-red text-vege-white px-2 py-2 rounded-md hover:bg-vege-black duration-300">Login</button>
+                    <div class="flex flex-col ">
+                        <button class="bg-vege-blue text-vege-white px-2 py-2 rounded-md hover:text-vege-black hover:bg-vege-grey duration-300">Login</button>
                         <a href="" class="text-vege-red font-normal text-sm">Lost your password?</a>
                     </div>
                 </div>
                 <!-- account column-2 -->
-                <div>
-                    <h2>Register</h2>
-                    <form>
+                <div class="flex-1">
+                    <h2 class="font-medium text-lg normal-case mb-3">Register</h2>
+                    <form class="flex flex-col gap-4">
                         <div>
-                            <label for="">
-                                <span>Username</span>
-                                <input type="text">
+                            <label class="flex-col" for="">
+                                <span class="text-xs">Username</span>
+                                <input class="w-full" type="text">
                             </label>
                         </div>
                         <div>
-                            <label for="">
-                                <span>Email address</span>
-                                <input type="text">
+                            <label class="flex flex-col" for="">
+                                <span class="text-xs">Email address</span>
+                                <input class="w-full" type="text">
                             </label>
                         </div>
                         <div>
-                            <label for="">
-                                <span>Password</span>
-                                <input type="text">
+                            <label class="flex flex-col" for="">
+                                <span class="text-xs">Password</span>
+                                <input class="w-full" type="text">
                             </label>
                         </div>   
-                        <div>
-                            <p>
+                        <div class="">
+                            <p class="font-normal text-sm">
                                 Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our 
-                                <a href="">privacy policy.</a>
+                                <a class="font-medium" href="">privacy policy.</a>
                             </p>
                         </div> 
                     </form>
-                    <div>
-                        <button class="bg-vege-red text-vege-white px-8 py-2 rounded-md hover:bg-vege-black duration-300">Login</button>
+                    <div class="flex flex-col mt-2">
+                        <button class="bg-vege-red text-vege-white px-8 py-2 rounded-md hover:text-vege-blue hover:bg-vege-grey duration-300">Login</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
     <!--*********************************************************************! Account End *********************************************************************-->
 
     <!--*********************************************************************? policy Start *********************************************************************-->
