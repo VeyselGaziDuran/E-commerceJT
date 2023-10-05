@@ -775,6 +775,14 @@ p {
   margin-top: 2.25rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .block {
   display: block;
 }
@@ -919,6 +927,10 @@ p {
   width: 100%;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -961,6 +973,17 @@ p {
 
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .cursor-pointer {
@@ -1695,6 +1718,11 @@ p {
 .hover\:bg-vege-red:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(235 100 64 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-vege-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 43 60 / var(--tw-bg-opacity));
 }
 
 .hover\:text-vege-black:hover {
