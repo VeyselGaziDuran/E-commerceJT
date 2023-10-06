@@ -359,51 +359,51 @@
                     <!-- Shop table wrapper -->
                     <div>
                         <!-- shop table -->
-                        <table>
-                            <thead>
+                        <table class=" border-collapse w-full mt-8">
+                            <thead class="">
                                 <!-- product thumbnail -->
-                                <th class="">&nbsp;</th>
-                                <th class="">&nbsp;</th>
+                                <th class="text-start text-sm font-semibold py-2">&nbsp;</th>
+                                <th class="text-start text-sm font-semibold py-2">&nbsp;</th>
                                 <!-- product name  -->
-                                <th>Product</th>
+                                <th class="text-start text-sm font-semibold py-2">Product</th>
                                 <!-- product price  -->
-                                <th>Price</th>
+                                <th class="text-start text-sm font-semibold py-2">Price</th>
                                 <!-- product quantity  -->
-                                <th>Quantity</th>
+                                <th class="text-center text-sm font-semibold py-2">Quantity</th>
                                 <!-- product total  -->
-                                <th>Subtotal</th>
+                                <th class="text-center text-sm font-semibold py-2">Subtotal</th>
                             </thead>
                             <!-- card wrapper -->
-                            <tbody>
+                            <tbody class="border-t">
                                 <!-- card item -->
-                                <tr>
+                                <tr class=" border-b">
                                     <td></td>
                                     <!-- cart image -->
-                                    <td>
-                                        <img src="/src/img/products/product1/.png" alt="">
+                                    <td class="relative">
+                                        <img class="w-16" src="/src/img/products/product1/1.png" alt="">
                                         <!-- delete-cart -->
-                                        <i class="bi bi-x"></i>
+                                        <i class="bi bi-x absolute top-1 -left-2 bg-vege-red cursor-pointer w-4 h-4 rounded-full grid text-vege-white text-center"></i>
                                     </td>
-                                    <td>Analogue Resin Starp</td>
-                                    <td>$156</td>
-                                    <td>1</td>
-                                    <td>$156</td>
+                                    <td class="py-2 text-xs">Analogue Resin Starp</td>
+                                    <td class="py-2 text-xs">$156</td>
+                                    <td class="py-2 text-xs text-center">1</td>
+                                    <td class="py-2 text-xs text-center">$156</td>
                                 </tr>
                                 <!-- card item -->
                                 <tr></tr>
                             </tbody>
                         </table>
                         <!-- action Wrapper -->
-                        <div>
+                        <div class="flex justify-between flex-wrap gap-2 mt-4">
                             <!-- cupon code -->
-                            <div>
+                            <div class="flex items-center gap-2">
                                 <!-- input-text -->
-                                <input type="text" placeholder="cupon code">
-                                <button class="">Apply Cuppon</button>
+                                <input class="rounded-l-md text-sm px-4 py-2.5" type="text" placeholder="cupon code">
+                                <button class="rounded-r-md block text-vege-white whitespace-nowrap border-vege-white border-2 text-center bg-vege-black hover:bg-vege-blue hover:text-vege-white focus:ring-4 text-sm px-4 py-2 duration-300">Apply Cuppon</button>
                             </div>
                             <!-- update cart  -->
-                            <div>
-                                <button class="">Update Cart</button>
+                            <div >
+                                <button class="rounded-md block text-vege-white whitespace-nowrap border-vege-white border-2 text-center bg-vege-red hover:bg-vege-blue hover:text-vege-white focus:ring-4 text-sm px-4 py-2 duration-300">Update Cart</button>
                             </div>
                         </div>
                     </div>
