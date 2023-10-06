@@ -763,20 +763,12 @@ p {
   margin-top: 1rem;
 }
 
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .block {
@@ -915,6 +907,18 @@ p {
   width: 100%;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -933,6 +937,10 @@ p {
 
 .basis-full {
   flex-basis: 100%;
+}
+
+.basis-3\/5 {
+  flex-basis: 60%;
 }
 
 .translate-x-4 {
@@ -966,16 +974,8 @@ p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.flex-col-reverse {
-  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -1006,6 +1006,10 @@ p {
   gap: 0.25rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-16 {
   gap: 4rem;
 }
@@ -1032,10 +1036,6 @@ p {
 
 .gap-\[\.125rem\] {
   gap: .125rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .overflow-auto {
@@ -1066,6 +1066,10 @@ p {
 
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-b-md {
@@ -1673,11 +1677,6 @@ p {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-.hover\:bg-vege-black:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 43 60 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-vege-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(73 113 116 / var(--tw-bg-opacity));
@@ -1843,14 +1842,6 @@ p {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
-  .md\:flex-col-reverse {
-    flex-direction: column-reverse;
   }
 
   .md\:flex-wrap {
