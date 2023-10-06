@@ -17,7 +17,7 @@
 </head>
 <body class="bg-vege-white">
     <!--*********************************************************************? Header Start *********************************************************************-->
-    <header class="border-b-2 border-vege-grey relative ">
+    <header class="border-b-2 border-vege-grey relative mb-8 ">
         <!--? Header-1  -->
         <div class="bg-vege-blue py-3.5 text-center text-xs">
             <div class="container">
@@ -281,7 +281,7 @@
     </header>
     <!--*********************************************************************! Header End *********************************************************************-->
     <!--*********************************************************************? Modal Search Start *********************************************************************-->
-    <div class="invisible  absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
+    <div class="invisible absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
         <div class="w-96 md:max-w-[800px] md:w-full h-auto bg-vege-white z-50 fixed p-8 rounded-md drop-shadow-2xl">
             <h3 class="font-semibold text-3xl normal-case">Search for products</h3>
             <p class="text-sm text-opacity-80 pb-4 border-vege-grey">Start typing to see products you are looking for.</p>
@@ -341,7 +341,7 @@
     <section>
         <div class="container">
             <!-- card page wrapper -->
-            <div class="flex justify-between">
+            <div class="flex justify-between flex-col gap-12 ">
                 <!-- card form -->
                 <form class="basis-3/5">
                     <!-- free progress bar -->
@@ -405,60 +405,60 @@
                             </tbody>
                         </table>
                         <!-- action Wrapper -->
-                        <div class="flex justify-between flex-wrap gap-2 mt-4">
+                        <div class="flex justify-center flex-wrap gap-8 mt-4">
                             <!-- cupon code -->
-                            <div class="flex items-center gap-2">
+                            <div class="flex items-center ">
                                 <!-- input-text -->
-                                <input class="rounded-l-md text-sm px-4 py-2.5" type="text" placeholder="cupon code">
+                                <input class="rounded-l-md text-sm px-16 py-2.5" type="text" placeholder="cupon code">
                                 <button class="rounded-r-md block text-vege-white whitespace-nowrap border-vege-white border-2 text-center bg-vege-black hover:bg-vege-blue hover:text-vege-white focus:ring-4 text-sm px-4 py-2 duration-300">Apply Cuppon</button>
                             </div>
                             <!-- update cart  -->
                             <div >
-                                <button class="rounded-md block text-vege-white whitespace-nowrap border-vege-white border-2 text-center bg-vege-red hover:bg-vege-blue hover:text-vege-white focus:ring-4 text-sm px-4 py-2 duration-300">Update Cart</button>
+                                <button class="rounded-md block px-16 text-vege-white whitespace-nowrap border-vege-white border-2 text-center bg-vege-red hover:bg-vege-blue hover:text-vege-white focus:ring-4 text-sm py-2 duration-300">Update Cart</button>
                             </div>
                         </div>
                     </div>
                 </form>
                 <!-- cart colletrals -->
-                <div>
+                <div class="flex-grow-0 flex-shrink-0 basis-[18.75rem] border p-8">
                     <!-- cart totals -->
                     <div>
-                        <h2></h2>
-                        <table>
+                        <h2 class="font-medium text-base pb-4 border-b normal-case">Cart Totals</h2>
+                        <table class="w-full">
                             <tbody>
                                 <!-- card Subtotal -->
-                                <tr>
-                                    <th class="text-sm font-semibold py-2">Subtotal</th>
-                                    <td class="text-sm font-semibold py-2">
+                                <tr class="border-b">
+                                    <th class="text-sm font-normal py-3 text-start">Subtotal</th>
+                                    <td class="text-sm font-normal py-3 text-end ">
                                         <span id="subtotal">$312.00</span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th>Shipping</th>
-                                    <td>
-                                        <ul>
+                                <tr class="border-b">
+                                    <th class="text-sm font-normal py-3 text-start">Shipping</th>
+                                    <td class="py-3">
+                                        <ul class="flex flex-col gap-y-3">
                                             <li>
-                                                <label for="">Fast Cargo $15.00
+                                                <label for="" class="flex items-center gap-2 justify-end  text-xs text-end">Fast Cargo $15.00
                                                     <input type="checkbox">
                                                 </label>
                                             </li>
                                             <li>
-                                                <a href="">Change Address</a>
+                                                <a href="" class="flex items-center gap-2 justify-end text-sm font-medium text-end text-vege-red">Change Address</a>
                                             </li>
                                         </ul>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th>Total</th>
-                                    <td>
-                                        <strong>$312.00</strong>
+                                <tr class="">
+                                    <th class="text-sm font-normal text-start py-3">Total</th>
+                                    <td class="py-3 text-end"> 
+                                        <strong class="text-lg font-bold ">$312.00</strong>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                         <!-- checkout -->
-                        <div>
-                            <button class="rounded-md block text-vege-white whitespace-nowrap border-vege-white border-2 text-center bg-vege-red hover:bg-vege-blue hover:text-vege-white focus:ring-4 text-sm px-4 py-2 duration-300">Proceed to checkout</button>
+                        <div class="">
+                            <button class="rounded-md block mt-8 w-full text-vege-white whitespace-nowrap border-vege-white border-2 text-center bg-vege-red hover:bg-vege-blue hover:text-vege-white focus:ring-4 text-sm px-4 py-2 duration-300">Proceed to checkout</button>
                         </div>
                     </div>
                 </div>
