@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card</title>
+    <title>E-commerceJT</title>
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Font-awsome icon -->
@@ -17,7 +17,7 @@
 </head>
 <body class="bg-vege-white">
     <!--*********************************************************************? Header Start *********************************************************************-->
-    <header class="border-b-2 border-vege-grey relative mb-8 ">
+    <header class="border-b-2 border-vege-grey relative ">
         <!--? Header-1  -->
         <div class="bg-vege-blue py-3.5 text-center text-xs">
             <div class="container">
@@ -280,8 +280,9 @@
         <!--? Header Mobile Links -->
     </header>
     <!--*********************************************************************! Header End *********************************************************************-->
+    
     <!--*********************************************************************? Modal Search Start *********************************************************************-->
-    <div class="invisible absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
+    <div class="invisible  absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
         <div class="w-96 md:max-w-[800px] md:w-full h-auto bg-vege-white z-50 fixed p-8 rounded-md drop-shadow-2xl">
             <h3 class="font-semibold text-3xl normal-case">Search for products</h3>
             <p class="text-sm text-opacity-80 pb-4 border-vege-grey">Start typing to see products you are looking for.</p>
@@ -336,136 +337,32 @@
     </div>
     <!--*********************************************************************! Modal Search End *********************************************************************-->
     
-    <!--*********************************************************************? Cart Start *********************************************************************-->
-    <!-- card page  -->
+    <!--*********************************************************************? Single Product Start *********************************************************************-->
+    <!-- Single Product -->
     <section>
+        <!-- container -->
         <div class="container">
-            <!-- card page wrapper -->
-            <div class="flex justify-between flex-col gap-12 ">
-                <!-- card form -->
-                <form class="basis-3/5">
-                    <!-- free progress bar -->
-                    <div class="border p-5 w-full">
-                        <!-- progress bar title  -->
-                        <p class="text-xs ">
-                            Add <strong class="text-vege-red">$165.00</strong> to cart and get free
-                        </p>
-                        <!-- progress bar  -->
-                        <div class="w-full h-2 bg-vege-grey rounded-full mt-2 relative">
-                            <!-- progress -->
-                            <span class="bg-vege-red w-1/4 h-2 rounded-full absolute"></span>
-                        </div>
-                    </div>
-                    <!-- Shop table wrapper -->
+            <!-- single product wrapper -->
+            <div>
+                <!--? breadcrumb start -->
+                <!-- single top bar -->
                     <div>
-                        <!-- shop table -->
-                        <table class=" border-collapse w-full mt-8">
-                            <thead class="">
-                                <!-- product thumbnail -->
-                                <th class="text-start text-sm font-semibold py-2">&nbsp;</th>
-                                <th class="text-start text-sm font-semibold py-2">&nbsp;</th>
-                                <!-- product name  -->
-                                <th class="text-start text-sm font-semibold py-2">Product</th>
-                                <!-- product price  -->
-                                <th class="text-start text-sm font-semibold py-2">Price</th>
-                                <!-- product quantity  -->
-                                <th class="text-center text-sm font-semibold py-2">Quantity</th>
-                                <!-- product total  -->
-                                <th class="text-center text-sm font-semibold py-2">Subtotal</th>
-                            </thead>
-                            <!-- card wrapper -->
-                            <tbody class="border-t">
-                                <!-- card item -->
-                                <tr class=" border-b">
-                                    <td></td>
-                                    <!-- cart image -->
-                                    <td class="relative">
-                                        <img class="w-16" src="/src/img/products/product1/1.png" alt="">
-                                        <!-- delete-cart -->
-                                        <i class="bi bi-x absolute top-1 -left-2 bg-vege-red cursor-pointer w-4 h-4 rounded-full grid text-vege-white text-center"></i>
-                                    </td>
-                                    <td class="py-2 text-xs">Analogue Resin Starp</td>
-                                    <td class="py-2 text-xs">$156</td>
-                                    <td class="py-2 text-xs text-center">1</td>
-                                    <td class="py-2 text-xs text-center">$156</td>
-                                </tr>
-                                <!-- card item -->
-                                <tr class=" border-b">
-                                    <td></td>
-                                    <!-- cart image -->
-                                    <td class="relative">
-                                        <img class="w-16" src="/src/img/products/product2/1.png" alt="">
-                                        <!-- delete-cart -->
-                                        <i class="bi bi-x absolute top-1 -left-2 bg-vege-red cursor-pointer w-4 h-4 rounded-full grid text-vege-white text-center"></i>
-                                    </td>
-                                    <td class="py-2 text-xs">Analogue Resin Starp</td>
-                                    <td class="py-2 text-xs">$156</td>
-                                    <td class="py-2 text-xs text-center">1</td>
-                                    <td class="py-2 text-xs text-center">$156</td>
-                            </tbody>
-                        </table>
-                        <!-- action Wrapper -->
-                        <div class="flex justify-center flex-wrap gap-8 mt-4">
-                            <!-- cupon code -->
-                            <div class="flex items-center ">
-                                <!-- input-text -->
-                                <input class="rounded-l-md text-sm px-16 py-2.5" type="text" placeholder="cupon code">
-                                <button class="rounded-r-md block text-vege-white whitespace-nowrap border-vege-white border-2 text-center bg-vege-black hover:bg-vege-blue hover:text-vege-white focus:ring-4 text-sm px-4 py-2 duration-300">Apply Cuppon</button>
-                            </div>
-                            <!-- update cart  -->
-                            <div >
-                                <button class="rounded-md block px-16 text-vege-white whitespace-nowrap border-vege-white border-2 text-center bg-vege-red hover:bg-vege-blue hover:text-vege-white focus:ring-4 text-sm py-2 duration-300">Update Cart</button>
-                            </div>
-                        </div>
+                        <!-- breadcrumb -->
+                        <nav>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Man</a></li>
+                                <li><a href="">Pants</a></li>
+                                <li>Basic Colored Sweatpants With Elastic Hems</li>
+                            </ul>
+                        </nav>
                     </div>
-                </form>
-                <!-- cart colletrals -->
-                <div class="flex-grow-0 flex-shrink-0 basis-[18.75rem] border p-8">
-                    <!-- cart totals -->
-                    <div>
-                        <h2 class="font-medium text-base pb-4 border-b normal-case">Cart Totals</h2>
-                        <table class="w-full">
-                            <tbody>
-                                <!-- card Subtotal -->
-                                <tr class="border-b">
-                                    <th class="text-sm font-normal py-3 text-start">Subtotal</th>
-                                    <td class="text-sm font-normal py-3 text-end ">
-                                        <span id="subtotal">$312.00</span>
-                                    </td>
-                                </tr>
-                                <tr class="border-b">
-                                    <th class="text-sm font-normal py-3 text-start">Shipping</th>
-                                    <td class="py-3">
-                                        <ul class="flex flex-col gap-y-3">
-                                            <li>
-                                                <label for="" class="flex items-center gap-2 justify-end  text-xs text-end">Fast Cargo $15.00
-                                                    <input type="checkbox">
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <a href="" class="flex items-center gap-2 justify-end text-sm font-medium text-end text-vege-red">Change Address</a>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr class="">
-                                    <th class="text-sm font-normal text-start py-3">Total</th>
-                                    <td class="py-3 text-end"> 
-                                        <strong class="text-lg font-bold ">$312.00</strong>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- checkout -->
-                        <div class="">
-                            <button class="rounded-md block mt-8 w-full text-vege-white whitespace-nowrap border-vege-white border-2 text-center bg-vege-red hover:bg-vege-blue hover:text-vege-white focus:ring-4 text-sm px-4 py-2 duration-300">Proceed to checkout</button>
-                        </div>
-                    </div>
-                </div>
+                <!--! breadcrumb end -->
             </div>
         </div>
     </section>
-    <!--*********************************************************************! Cart End *********************************************************************-->
+
+    <!--*********************************************************************! Single Product End *********************************************************************-->
 
     <!--*********************************************************************? policy Start *********************************************************************-->
     <section>
