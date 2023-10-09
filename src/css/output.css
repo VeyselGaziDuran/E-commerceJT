@@ -1797,6 +1797,11 @@ p {
   background-color: rgb(235 100 64 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-vege-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 43 60 / var(--tw-bg-opacity));
+}
+
 .hover\:text-vege-black:hover {
   --tw-text-opacity: 1;
   color: rgb(17 43 60 / var(--tw-text-opacity));
