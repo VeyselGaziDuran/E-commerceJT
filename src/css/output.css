@@ -707,6 +707,11 @@ p {
   margin-bottom: 1.25rem;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -1607,6 +1612,10 @@ p {
   transition-duration: 500ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
 .hover\:textwhite:hover path {
   --tw-text-opacity: 1;
   color: rgb(239 245 245 / var(--tw-text-opacity));
@@ -1640,6 +1649,17 @@ p {
 .after\:top-0::after {
   content: var(--tw-content);
   top: 0px;
+}
+
+.after\:mx-1::after {
+  content: var(--tw-content);
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.after\:contents::after {
+  content: var(--tw-content);
+  display: contents;
 }
 
 .after\:h-0::after {
@@ -1696,6 +1716,18 @@ p {
   background-color: rgb(73 113 116 / var(--tw-bg-opacity));
 }
 
+.after\:text-vege-red::after {
+  content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: rgb(235 100 64 / var(--tw-text-opacity));
+}
+
+.after\:text-vege-grey::after {
+  content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: rgb(214 228 229 / var(--tw-text-opacity));
+}
+
 .after\:opacity-50::after {
   content: var(--tw-content);
   opacity: 0.5;
@@ -1717,6 +1749,16 @@ p {
 
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'_\2197\'\]::after {
+  --tw-content: ' ↗';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\/\'\]::after {
+  --tw-content: '/';
   content: var(--tw-content);
 }
 
@@ -1766,6 +1808,14 @@ p {
   color: rgb(239 245 245 / var(--tw-text-opacity));
 }
 
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.hover\:decoration-solid:hover {
+  text-decoration-style: solid;
+}
+
 .hover\:opacity-0:hover {
   opacity: 0;
 }
@@ -1776,6 +1826,10 @@ p {
 
 .hover\:opacity-70:hover {
   opacity: 0.7;
+}
+
+.hover\:duration-1000:hover {
+  transition-duration: 1000ms;
 }
 
 .after\:hover\:scale-x-100:hover::after {
