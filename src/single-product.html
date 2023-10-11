@@ -361,11 +361,11 @@
 
                 <!--? site main start -->
                 <!-- single content -->
-                <div class="mt-8">
+                <div class="mt-8 ">
                     <!-- sait main -->
-                    <main>
+                    <main class="flex justify-between flex-col md:flex-row items-center">
                         <!-- product gallery -->
-                        <div class="w-2/4 pr-4">
+                        <div class="w-2/4 pr-4 mb-4">
                             <!-- single image wrapper -->
                             <div class="w-full">
                                 <img class="hover:cursor-zoom-in" src="img/products/product2/1.png" alt="">
@@ -387,130 +387,146 @@
                             </div>
                         </div>
                         <!-- product info -->
-                        <div>
+                        <div class="w-1/2 pl-4">
                             <!-- product-title -->
-                            <h1>
-                                <!-- Ridley High Waist  -->
+                            <h1 class="text-xl normal-case font-medium">
+                                Ridley High Waist
                             </h1>
                             <!-- product review -->
-                            <div>
+                            <div class="flex items-center gap-2 my-3">
                                 <!-- product star -->
-                                <ul>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
-                                    <li><i class="bi bi-star-fill"></i></li>
+                                <ul class="flex items-center">
+                                    <li class="flex"><i class="bi bi-star-fill text-vege-gold text-xs"></i></li>
+                                    <li class="flex"><i class="bi bi-star-fill text-vege-gold text-xs"></i></li>
+                                    <li class="flex"><i class="bi bi-star-fill text-vege-gold text-xs"></i></li>
+                                    <li class="flex"><i class="bi bi-star-fill text-vege-gold text-xs"></i></li>
+                                    <li class="flex"><i class="bi bi-star-half text-vege-gold text-xs"></i></li>
                                 </ul>
-                                <span>2 reviews</span>
+                                <span class="text-xs font-medium opacity-60">2 reviews</span>
                             </div>
                             <!-- product price  -->
-                            <div>
-                                <s>$165</s>
-                                <strong>$210</strong>
+                            <div class="flex items-center gap-2">
+                                <s class="text-lg text-vege-grey">$165</s>
+                                <strong class="text-lg">$210</strong>
                             </div>
-                        </div>
-                        <!-- product description -->
-                        <div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magni similique dolorum modi?
-                                 Non dicta, quod aperiam eveniet, nulla minus eius,
-                                 cupiditate praesentium ratione officia fugiat explicabo molestias iste ipsa?
-                            </p>
-                            <form action="">
-                                <!-- variations -->
-                                <div>
-                                    <!-- colors -->
+                            <!-- product description -->
+                            <div class="text-sm leading-6 my-4">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magni similique dolorum modi?
+                                    Non dicta, quod aperiam eveniet, nulla minus eius,
+                                    cupiditate praesentium ratione officia fugiat explicabo molestias iste ipsa?
+                                </p>
+                                <form action="">
+                                    <!-- variations -->
                                     <div>
-                                        <!-- colors label -->
-                                        <div>
-                                            <span>Color</span>
-                                        </div>
-                                        <!-- colors wrapper -->
-                                        <div>
-                                            <!-- color wrapper -->
-                                            <div>
-                                                <!-- color Blue -->
-                                                <label for="">
-                                                    <input type="radio" name="product-color" id="">
-                                                    <span class="bg-vege-blue"></span>
-                                                </label>
+                                        <!-- colors -->
+                                        <div class="">
+                                            <!-- colors label -->
+                                            <div class="font-medium text-sm mb-2">
+                                                <span>Color</span>
                                             </div>
-                                            <!-- color wrapper -->
-                                            <div>
-                                                <!-- color Blue -->
-                                                <label for="">
-                                                    <input type="radio" name="product-color" id="">
-                                                    <span class="bg-vege-blue"></span>
-                                                </label>
+                                            <!-- colors wrapper -->
+                                            <div class="flex">
+                                                <!-- color wrapper -->
+                                                <div class="border w-9 h-9 rounded-full p-1 cursor-pointer hover:border-vege-red duration-300">
+                                                    <!-- color Blue -->
+                                                    <label for="" class="inline-block w-full h-full cursor-pointer mr-2 bg-blue-600 rounded-full">
+                                                        <input type="radio" name="product-color" id="" class="appearance-none">
+                                                        <span class="bg-vege-blue"></span>
+                                                    </label>
+                                                </div>
+                                                <!-- color wrapper -->
+                                                <div class="border w-9 h-9 rounded-full p-1 cursor-pointer hover:border-vege-red  duration-300">
+                                                    <!-- color Blue -->
+                                                    <label for="" class="inline-block w-full h-full cursor-pointer mr-2 bg-vege-black rounded-full">
+                                                        <input type="radio" name="product-color" id=""  class="appearance-none">
+                                                        <span class="bg-vege-blue"></span>
+                                                    </label>
+                                                </div>
+                                                <!-- color wrapper -->
+                                                <div class="border w-9 h-9 rounded-full p-1 cursor-pointer hover:border-vege-red duration-300">
+                                                    <!-- color Blue -->
+                                                    <label for="" class="inline-block w-full h-full cursor-pointer mr-2 bg-red-600 rounded-full">
+                                                        <input type="radio" name="product-color" id=""  class="appearance-none">
+                                                        <span class="bg-vege-blue"></span>
+                                                    </label>
+                                                </div>
+                                                <!-- color wrapper -->
+                                                <div class="border w-9 h-9 rounded-full p-1 cursor-pointer hover:border-vege-red duration-300">
+                                                    <!-- color Blue -->
+                                                    <label for="" class="inline-block w-full h-full cursor-pointer mr-2 bg-vege-blue rounded-full">
+                                                        <input type="radio" name="product-color" id=""  class="appearance-none">
+                                                        <span class="bg-vege-blue"></span>
+                                                    </label>
+                                                </div>
+                                                <!-- color wrapper -->
+                                                <div class="border w-9 h-9 rounded-full p-1 cursor-pointer hover:border-vege-red duration-300">
+                                                    <!-- color Blue -->
+                                                    <label for="" class="inline-block w-full h-full cursor-pointer mr-2 bg-vege-red rounded-full">
+                                                        <input type="radio" name="product-color" id=""  class="appearance-none">
+                                                        <span class="bg-vege-blue"></span>
+                                                    </label>
+                                                </div>
                                             </div>
-                                            <!-- color wrapper -->
+                                        </div>
+                                        <!-- values -->
+                                        <div class="flex flex-col gap-3 my-2 ">
+                                            <!-- values label  -->
                                             <div>
-                                                <!-- color Blue -->
-                                                <label for="">
-                                                    <input type="radio" name="product-color" id="">
-                                                    <span class="bg-vege-blue"></span>
-                                                </label>
+                                                <span class="text-sm font-medium">Size</span>
+                                            </div>
+                                            <!-- values list -->
+                                            <div class="flex gap-2 flex-wrap">
+                                                <span class="py-2 px-10 border text-sm cursor-pointer bg-vege-red duration-300 rounded-md ">XS</span>
+                                                <span class="py-2 px-10 border text-sm cursor-pointer hover:bg-vege-red duration-300 rounded-md ">S</span>
+                                                <span class="py-2 px-10 border text-sm cursor-pointer hover:bg-vege-red duration-300 rounded-md ">M</span>
+                                                <span class="py-2 px-10 border text-sm cursor-pointer hover:bg-vege-red duration-300 rounded-md ">L</span>
+                                                <span class="py-2 px-10 border text-sm cursor-pointer hover:bg-vege-red duration-300 rounded-md ">XL</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- values -->
-                                    <div>
-                                        <!-- values label  -->
-                                        <div>
-                                            <span>Size</span>
+                                        <!-- card button -->
+                                        <div class="flex gap-2 mt-6">
+                                            <input type="number" value="1" min="1" class="w-20 h-10 px-4">
+                                            <button class="w-full bg-vege-red text-vege-white hover:bg-vege-black hover:text-vege-white duration-300">Add to cart</button>
                                         </div>
-                                        <!-- values list -->
-                                        <div>
-                                            <span>XS</span>
-                                            <span>S</span>
-                                            <span>M</span>
-                                            <span>L</span>
-                                            <span>XL</span>
+                                        <!-- profuct extra buttons -->
+                                        <div class="flex items-center gap-4 mt-5">
+                                            <a href="" class="text-xs opacity-60">
+                                                <i class="bi bi-globe"></i>
+                                                <span>Size Guide</span>
+                                            </a>
+                                            <a href="" class="text-xs opacity-60">
+                                                <i class="bi bi-heart"></i>
+                                                <span>Add To Wislist</span>
+                                            </a>
+                                            <a href="" class="text-xs opacity-60">
+                                                <i class="bi bi-share"></i>
+                                                <span>Share this Product</span>
+                                            </a>
                                         </div>
                                     </div>
-                                    <!-- card button -->
+                                </form>
+                                <!-- divider -->
+                                <div class=" my-5 border border-opacity-60">
+                                    <hr>
+                                </div>
+                                <!-- product meta -->
+                                <div class="flex flex-col gap-2 mt-5 text-xs ">
+                                    <!-- product sku -->
                                     <div>
-                                        <input type="number" value="1" min="1">
-                                        <button class="bg-vege-red text-vege-white hover:bg-vege-black hover:text-vege-white duration-300">Add to cart</button>
+                                        <span class="opacity-60">SKU:</span>
+                                        <a href=""> PD0016</a>
                                     </div>
-                                    <!-- profuct extra buttons -->
+                                    <!-- product categories -->
                                     <div>
-                                        <a href="">
-                                            <i class="bi bi-globe"></i>
-                                            <span>Size Guide</span>
-                                        </a>
-                                        <a href="">
-                                            <i class="bi bi-heart"></i>
-                                            <span>Add To Wislist</span>
-                                        </a>
-                                        <a href="">
-                                            <i class="bi bi-share"></i>
-                                            <span>Share this Product</span>
-                                        </a>
+                                        <span class="opacity-60">SKU:</span>
+                                        <a href=""> Pants, Man</a>
                                     </div>
-                                </div>
-                            </form>
-                            <!-- divider -->
-                            <div>
-                                <hr>
-                            </div>
-                            <!-- product meta -->
-                            <div>
-                                <!-- product sku -->
-                                <div>
-                                    <span>SKU:</span>
-                                    <strong> PD0016</strong>
-                                </div>
-                                <!-- product categories -->
-                                <div>
-                                    <span>SKU:</span>
-                                    <strong> Pants, Man</strong>
-                                </div>
-                                <!-- product tags -->
-                                <div>
-                                    <span>Tags</span>
-                                    <strong>Black, White</strong>
+                                    <!-- product tags -->
+                                    <div>
+                                        <span class="opacity-60">Tags</span>
+                                        <a href="">Black, White</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
