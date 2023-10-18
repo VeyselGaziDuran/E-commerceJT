@@ -14,8 +14,22 @@ closeSidebar.addEventListener('click', () => {
     sidebar.style.transition = "0.5s";
 });
 
+// click outside sidebar Start
+document.addEventListener('click', (event) => {
+    if (
+        !event.composedPath().includes(sidebar) &&
+        !event.composedPath().includes(btnOpenSidebar)
+    ) {
+       sidebar.style.left = "-100%"; 
+    }
+});
 
-console.log(btnOpenSidebar);
+
+
+// click outside sidebar End
+
+
+
 //! Home Sidebar End
 
 
