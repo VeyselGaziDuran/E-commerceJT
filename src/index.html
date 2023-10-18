@@ -156,7 +156,7 @@
                             <i data-lucide="user-2" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
                         </a> 
                         <!-- Search Icon-->
-                        <button class="bg-transparent border-none">
+                        <button id="toggle-search-button" class="bg-transparent border-none">
                             <i data-lucide="search" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
                         </button>
                         <!-- Faw Icon -->
@@ -281,7 +281,7 @@
     </header>
     <!--*********************************************************************! Header End *********************************************************************-->
     <!--*********************************************************************? Modal Search Start *********************************************************************-->
-    <div class="invisible  absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
+    <div id="modal-search" class="invisible  absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
         <div class="w-96 md:max-w-[800px] md:w-full h-auto bg-vege-white z-50 fixed p-8 rounded-md drop-shadow-2xl">
             <h3 class="font-semibold text-3xl normal-case">Search for products</h3>
             <p class="text-sm text-opacity-80 pb-4 border-vege-grey">Start typing to see products you are looking for.</p>
@@ -331,7 +331,7 @@
                     </a>
                 </div>
             </div>
-            <i class="absolute top-2 end-2 cursor-pointer" data-lucide="x-circle"></i>
+            <i id="btn-modal-search-close" class="absolute top-2 end-2 cursor-pointer" data-lucide="x-circle"></i>
         </div>
     </div>
     <!--*********************************************************************! Modal Search End *********************************************************************-->

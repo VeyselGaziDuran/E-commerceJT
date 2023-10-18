@@ -1,4 +1,4 @@
-//! Home Sidebar Start
+//?------------------------------- Home Sidebar Start
 const btnOpenSidebar = document.querySelector('#btn-menu');
 const sidebar = document.querySelector('#sidebar');
 const closeSidebar = document.querySelector('#close-sidebar');
@@ -14,7 +14,7 @@ closeSidebar.addEventListener('click', () => {
     sidebar.style.transition = "0.5s";
 });
 
-// click outside sidebar Start
+//------------------------------- click outside sidebar Start
 document.addEventListener('click', (event) => {
     if (
         !event.composedPath().includes(sidebar) &&
@@ -23,13 +23,31 @@ document.addEventListener('click', (event) => {
        sidebar.style.left = "-100%"; 
     }
 });
+//------------------------------- click outside sidebar End
+//!------------------------------- Home Sidebar End
 
+//?------------------------------- Search Modal Start
+const btnOpenSearch = document.getElementById('toggle-search-button');
+const modalSearch = document.getElementById('modal-search');
+const btnCloseSearch = document.getElementById('btn-modal-search-close');
 
+btnOpenSearch.addEventListener('click', () => {
+    modalSearch.style.visibility = 'visible';
+});
 
-// click outside sidebar End
+btnCloseSearch.addEventListener('click', () => {
+    modalSearch.style.visibility = 'hidden';
+});
 
+//------------------------------- click Outside Search Modal Start
+document.addEventListener('click', (event) => {
+    if (
+        !event.composedPath().includes(modalSearch) &&
+        !event.composedPath().includes(btnOpenSearch)
+    ) {
+        modalSearch.style.visibility = 'hidden'; 
+    }
+});
+//------------------------------- click Outside Search Modal End
 
-
-//! Home Sidebar End
-
-
+//!------------------------------- Search Modal End
