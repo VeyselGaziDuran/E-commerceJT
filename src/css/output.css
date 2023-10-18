@@ -1023,6 +1023,20 @@ p {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-vegeslide {
+  animation: opacity 1s ease forwards;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1683,6 +1697,10 @@ p {
   opacity: 0.75;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1719,10 +1737,6 @@ p {
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover\:textwhite:hover path {
@@ -1968,6 +1982,11 @@ p {
 .active\:border-vege-red:active {
   --tw-border-opacity: 1;
   border-color: rgb(235 100 64 / var(--tw-border-opacity));
+}
+
+.active\:bg-vege-red:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 100 64 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:visible {

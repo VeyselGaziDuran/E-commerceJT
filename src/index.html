@@ -281,7 +281,7 @@
     </header>
     <!--*********************************************************************! Header End *********************************************************************-->
     <!--*********************************************************************? Modal Search Start *********************************************************************-->
-    <div id="modal-search" class="invisible  absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
+    <div id="modal-search" class="invisible z-50  absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
         <div class="w-96 md:max-w-[800px] md:w-full h-auto bg-vege-white z-50 fixed p-8 rounded-md drop-shadow-2xl">
             <h3 class="font-semibold text-3xl normal-case">Search for products</h3>
             <p class="text-sm text-opacity-80 pb-4 border-vege-grey">Start typing to see products you are looking for.</p>
@@ -342,7 +342,8 @@
         <!-- slider elements -->
         <div>
             <!-- slider items -->
-            <div class="relative h-[calc(100vh-129.6px)]  md:h-[calc(100vh-141.6px)] flex items-center ">
+            <!-- slider item 1 -->
+            <div class="relative h-[calc(100vh-129.6px)] animate-vegeslide slider-item  md:h-[calc(100vh-141.6px)] flex items-center ">
                 <!-- slider image -->
                 <div>
                     <img src="img/slider/slider1.jpg" class="-z-10 lg:object-none lg:object-left-bottom object-cover absolute top-0 left-0 w-full h-full" alt="#">
@@ -354,27 +355,53 @@
                     <a class="absolute cursor-pointer text-white hover:text-vege-black bg-vege-blue hover:bg-vege-grey focus:ring-4 rounded-md text-sm px-7 py-4 mr-2 mb-2 mt-3 duration-300" href="#">Explore Now</a>
                 </div>
             </div>
+            <!-- slider item 2 -->
+            <div class="relative h-[calc(100vh-129.6px)] animate-vegeslide slider-item  md:h-[calc(100vh-141.6px)] flex items-center ">
+                <!-- slider image -->
+                <div>
+                    <img src="img/slider/slider2.jpg" class="-z-10 lg:object-none lg:object-left-bottom object-cover absolute top-0 left-0 w-full h-full" alt="#">
+                </div>
+                <!-- slider container -->
+                <div class="container z-10">
+                    <p class="text-lg font-medium">SUMMER 2023</p>
+                    <h2 class="text-6xl">Save up to 70%</h2>
+                    <a class="absolute cursor-pointer text-white hover:text-vege-black bg-vege-blue hover:bg-vege-grey focus:ring-4 rounded-md text-sm px-7 py-4 mr-2 mb-2 mt-3 duration-300" href="#">Explore Now</a>
+                </div>
+            </div>
+            <!-- slider item 3 -->
+            <div class="relative h-[calc(100vh-129.6px)] animate-vegeslide slider-item  md:h-[calc(100vh-141.6px)] flex items-center ">
+                <!-- slider image -->
+                <div>
+                    <img src="img/slider/slider3.jpg" class="-z-10 lg:object-none lg:object-left-bottom object-cover absolute top-0 left-0 w-full h-full" alt="#">
+                </div>
+                <!-- slider container -->
+                <div class="container z-10">
+                    <p class="text-lg font-medium">SUMMER 2023</p>
+                    <h2 class="text-6xl">Save up to 70%</h2>
+                    <a class="absolute cursor-pointer text-white hover:text-vege-black bg-vege-blue hover:bg-vege-grey focus:ring-4 rounded-md text-sm px-7 py-4 mr-2 mb-2 mt-3 duration-300" href="#">Explore Now</a>
+                </div>
+            </div>
             <!-- slider buttons -->
             <div class="flex absolute w-full h-full top-0 text-center justify-between px-3">
                 <!-- right button  -->
-                <button class="z-20">
+                <button onclick="plusSlide(-1)" class="z-20">
                     <i data-lucide="chevron-left" class="md:w-12 md:h-12 hover:textwhite bg-vege-grey hover:bg-vege-blue rounded-full duration-300 opacity-30 hover:opacity-100"></i>
                 </button>
                 <!-- left button  -->
-                <button class="z-20">
+                <button onclick="plusSlide(1)" class="z-20">
                     <i data-lucide="chevron-right" class="md:w-12 md:h-12 hover:textwhite bg-vege-grey hover:bg-vege-blue rounded-full duration-300 opacity-30 hover:opacity-100"></i>
                 </button>
             </div>
             <!-- slider dots -->
             <div class="absolute w-full flex items-center gap-2 justify-center border-none bottom-5">
-                <button>
-                    <span class="w-3 h-3 bg-vege-blue opacity-40 hover:opacity-0 duration-300 block rounded-full"></span>
+                <button onclick="currentSlide(1)">
+                    <span class="slider-dot w-3 h-3 bg-vege-blue opacity-40 hover:opacity-0 duration-300 block rounded-full"></span>
                 </button>
-                <button>
-                    <span class="w-3 h-3 bg-vege-blue opacity-40 hover:opacity-0 duration-300 block rounded-full"></span>
+                <button onclick="currentSlide(2)">
+                    <span class="slider-dot w-3 h-3 bg-vege-blue opacity-40 hover:opacity-0 duration-300 block rounded-full"></span>
                 </button>
-                <button>
-                    <span class="w-3 h-3 bg-vege-blue opacity-40 hover:opacity-0 duration-300 block rounded-full"></span>
+                <button onclick="currentSlide(3)">
+                    <span class="slider-dot w-3 h-3 bg-vege-blue opacity-40 hover:opacity-0 duration-300 block rounded-full"></span>
                 </button>
             </div>
         </div>

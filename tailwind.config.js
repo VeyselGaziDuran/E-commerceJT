@@ -26,7 +26,15 @@ module.exports = {
          'vege-red': '#EB6440',
          'vege-gold': '#ffd700',
        },
-
+       animation: {
+        vegeslide: 'opacity 1s ease forwards',
+       },
+       keyframes: {
+        opacity: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+       },
       // spacing: {
       //   128: '32rem',
       // },
