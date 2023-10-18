@@ -1,17 +1,20 @@
-new Glide('.glide',{
+
+const config = {
     type: 'carousel',
-    startAt: 0,
-    perView: 3,
+    perView: 4,
+    gap:20,
     autoplay: 2000,
-    hoverpause: true,
-    animationDuration: 800,
-    animationTimingFunc: 'linear',
     breakpoints: {
-        1200: {
+        1024: {
+            perView: 3
+        },
+        800: {
             perView: 2
         },
-        768: {
-            perView: 1
+        480: {
+            perView: 2
         }
     }
-}).mount();
+};
+
+new Glide('.product-carousel',config).mount();
