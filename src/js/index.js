@@ -33,10 +33,13 @@ const btnCloseSearch = document.getElementById('btn-modal-search-close');
 
 btnOpenSearch.addEventListener('click', () => {
     modalSearch.style.visibility = 'visible';
+    modalSearch.style.opacity = '1';
 });
 
 btnCloseSearch.addEventListener('click', () => {
     modalSearch.style.visibility = 'hidden';
+    modalSearch.style.opacity = '0';
+    modalSearch.style.transition = '0.5s';
 });
 
 //------------------------------- click Outside Search Modal Start
@@ -46,6 +49,8 @@ document.addEventListener('click', (event) => {
         !event.composedPath().includes(btnOpenSearch)
     ) {
         modalSearch.style.visibility = 'hidden'; 
+        modalSearch.style.opacity = '0';
+        modalSearch.style.transition = '0.5s';
     }
 });
 //------------------------------- click Outside Search Modal End
