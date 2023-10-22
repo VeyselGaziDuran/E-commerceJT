@@ -1,5 +1,6 @@
-import header from "/src/js/header.js";
-// import slider from "/src/js/slider.js";
+import headerFunc from "/src/js/header.js";
+// import sliderFunc from "/src/js/slider.js";
+import productsFunc from "/src/js/products.js";
 
 //?------------------------------- Add Product to LocalStorage Start
 

@@ -488,7 +488,7 @@
             <div class="product-carousel relative">
                 <div class="glide__track" data-glide-el="track">
                     <!-- Products List -->
-                <ul class="grid grid-cols-2 md:grid-cols-4 gap-5 glide__slides">
+                <ul id="product-list" class="grid grid-cols-2 md:grid-cols-4 gap-5 glide__slides">
                     <!-- Products List item -->
                     <li class="text-center glide__slide bg-vege-grey rounded-md relative group">
                         <!-- product image -->
@@ -503,21 +503,6 @@
                             <a href="" class="font-semibold text-sm mt-4">Analogue Resin Strap</a>
                             <!-- Product Star-->
                             <ul class="flex text-center justify-center my-2 gap-[.125rem]">
-                                <li>
-                                    <i class="text-vege-gold bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="text-vege-gold bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="text-vege-gold bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="text-vege-gold bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="text-vege-gold bi bi-star-half"></i>
-                                </li>
                             </ul>
                             <!-- Product Price-->
                             <div class="flex justify-center text-center gap-2 mb-3">
@@ -1453,6 +1438,6 @@
     <script src="/src/js/slider.js"></script>
     <!--? Glide js  -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script src="/src/js/glide.js"></script>
+    <script src="/src/js/glide.js" type="module"></script>
 </body>
 </html>

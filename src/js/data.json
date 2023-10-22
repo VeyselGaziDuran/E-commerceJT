@@ -8,7 +8,7 @@
         },
         "discount": 22,
         "img": {
-            "singleImage": "/srcimg/products/product1/1.png",
+            "singleImage": "/src/img/products/product1/1.png",
             "thumbs": [
                 "/src/img/products/product1/1.png",
                 "/src/img/products/product1/2.png",
@@ -25,7 +25,7 @@
         },
         "discount": 33,
         "img": {
-            "singleImage": "/srcimg/products/product2/1.png",
+            "singleImage": "/src/img/products/product2/1.png",
             "thumbs": [
                 "/src/img/products/product2/1.png",
                 "/src/img/products/product2/2.png",
@@ -42,7 +42,7 @@
         },
         "discount": 90,
         "img": {
-            "singleImage": "/srcimg/products/product3/1.png",
+            "singleImage": "/src/img/products/product3/1.png",
             "thumbs": [
                 "/src/img/products/product3/1.png",
                 "/src/img/products/product3/2.png",
