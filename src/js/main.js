@@ -15,6 +15,9 @@ getData();
 
 const products = JSON.parse(localStorage.getItem('products'));
 
-console.log(products);
+const cartItems = document.querySelector('.header-cart-count');
 
+cartItems.innerHTML = localStorage.getItem('cart')
+ ? JSON.parse(localStorage.getItem('cart')).length
+ : 0;
 //?------------------------------- Add Product to LocalStorage End
