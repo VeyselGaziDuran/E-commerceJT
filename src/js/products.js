@@ -4,7 +4,7 @@ let products =  localStorage.getItem('products')
             ? JSON.parse(localStorage.getItem('products'))
             : [];
 
-export let cart = localStorage.getItem('cart') 
+let cart = localStorage.getItem('cart') 
         ? JSON.parse(localStorage.getItem('cart')) 
         : [];
 
@@ -28,6 +28,7 @@ function addToCart() {
         });
     });
 }
+
 
 function productsFunc() {
     const productsContainer = document.getElementById('product-list');
