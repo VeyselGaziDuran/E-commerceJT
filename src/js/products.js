@@ -103,4 +103,4 @@ function productsFunc() {
     product1();
   }
  
-    export default productsFunc();
+    export default productsFunc;
