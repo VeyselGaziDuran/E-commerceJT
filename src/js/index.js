@@ -100,3 +100,5 @@ function showSlides(n) {
 
 
 //!------------------------------- Home Slider End
+
+localStorage.setItem('name', JSON.stringify('John Doe'));
