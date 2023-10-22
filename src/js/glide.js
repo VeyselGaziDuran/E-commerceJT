@@ -1,10 +1,10 @@
 
 export default function product1() {
     const config = {
-        type: 'carousel',
         perView: 4,
         gap: 20,
         autoplay: 2000,
+        bound: true,
         breakpoints: {
             1024: {
                 perView: 3
