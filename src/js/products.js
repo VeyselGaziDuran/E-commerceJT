@@ -1,11 +1,14 @@
 import  product1 from "/src/js/glide.js";
 
-let products = []
-let cart = []
+let products =  localStorage.getItem('products')
+            ? JSON.parse(localStorage.getItem('products'))
+            : [];
 
-cart = localStorage.getItem('cart') 
-? JSON.parse(localStorage.getItem('cart')) 
-: [];
+export let cart = localStorage.getItem('cart') 
+        ? JSON.parse(localStorage.getItem('cart')) 
+        : [];
+
+
 
 function addToCart() {
     const cartItems = document.querySelector('.header-cart-count');
@@ -27,9 +30,6 @@ function addToCart() {
 }
 
 function productsFunc() {
-    products =  localStorage.getItem('products')
-     ? JSON.parse(localStorage.getItem('products'))
-     : [];
     const productsContainer = document.getElementById('product-list');
    
     let results = '';
@@ -97,7 +97,7 @@ function productsFunc() {
             </div>
         </li>
         `;
-        productsContainer.innerHTML = results;
+        productsContainer ? productsContainer.innerHTML = results: '';
         addToCart();
     });
     product1();
