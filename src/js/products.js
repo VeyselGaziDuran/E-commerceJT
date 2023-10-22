@@ -11,20 +11,19 @@ function addToCart() {
     const cartItems = document.querySelector('.header-cart-count');
     const buttons = [...document.getElementsByClassName('add-to-cart')];
     buttons.forEach((button) => {
-        const indCart = cart.find((item) => item.id === Number(button.dataset.id));
-        if (indCart) {
-            button.setAttribute = ('disabled', "disabled");
-        }else {
-            button.addEventListener('click', function (e) {
-                const id = e.target.dataset.id;
-                const findProduct = products.find((product) => product.id === Number(id));
-                cart.push({...findProduct, quantity: 1});
-                localStorage.setItem('cart', JSON.stringify(cart));
-                button.setAttribute = ('disabled', "disabled");
-                cartItems.innerHTML = cart.length;
-            });
-        }
+        button.addEventListener('click', function (e) {
+            const id = e.target.dataset.id;
+            const findProduct = products.find((product) => product.id === Number(id));
+            const indCart = cart.find((item) => item.id === Number(id));
+            if (indCart) {
+                cart.push({ ...findProduct, quantity: 1 });
+            } else {
+                cart.push({ ...findProduct, quantity: 1 });
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            cartItems.innerHTML = cart.length;
         });
+    });
 }
 
 function productsFunc() {
