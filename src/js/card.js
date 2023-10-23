@@ -27,9 +27,9 @@ function displayCartProducts() {
           </button>
         </td>
         <td class="py-2 text-xs">${item.name}</td>
-        <td class="py-2 text-xs">$${item.price.newPrice}</td>
+        <td class="py-2 text-xs">$${item.price.newPrice.toFixed(2)}</td>
         <td class="py-2 text-xs text-center">${item.quantity}</td>
-        <td class="py-2 text-xs text-center">$${item.quantity * item.price.newPrice}</td>
+        <td class="py-2 text-xs text-center">$${(item.price.newPrice * item.quantity).toFixed(2)}</td>
       </tr>
     `;
   }
@@ -113,8 +113,37 @@ function removeFromCart(id) {
   }
   localStorage.setItem('cart', JSON.stringify(cart));
   displayCartProducts();
+  saveCartValues();
 }
+
+function saveCartValues() {
+  const cartTotal = document.getElementById('cart-total');
+  const subTotal = document.getElementById('subtotal');
+  const fastCargo = document.getElementById('fast-cargo');
+
+  let itemsTotal = 0;
+
+  cart.length > 0 && cart.map((item) => (itemsTotal += item.price.newPrice * item.quantity));
+
+  subTotal.innerHTML = `$${itemsTotal.toFixed(2)}`;
+  cartTotal.innerHTML = `$${itemsTotal.toFixed(2)}`;
+
+  const fastCargoPrice = 15;
+
+  fastCargo.addEventListener('change', function (e) {
+    if (e.target.checked) {
+      cartTotal.innerHTML = `$${(itemsTotal + fastCargoPrice).toFixed(2)}`;
+    }else{
+      cartTotal.innerHTML = `$${itemsTotal.toFixed(2)}`;
+    }
+  });
+
+}
+
+saveCartValues()
 
 document.addEventListener('DOMContentLoaded', function () {
   displayCartProducts();
 });
+
+
