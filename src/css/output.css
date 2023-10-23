@@ -2074,6 +2074,10 @@ p {
     height: calc(100vh - 141.6px);
   }
 
+  .md\:h-6 {
+    height: 1.5rem;
+  }
+
   .md\:w-10 {
     width: 2.5rem;
   }
@@ -2100,6 +2104,10 @@ p {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-6 {
+    width: 1.5rem;
   }
 
   .md\:max-w-\[800px\] {

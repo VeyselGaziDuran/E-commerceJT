@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
     <link href="css/output.css" rel="stylesheet">
+    <!--  Glide.js CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" integrity="sha512-tYKqO78H3mRRCHa75fms1gBvGlANz0JxjN6fVrMBvWL+vOOy200npwJ69OBl9XEsTu3yVUvZNrdWFIIrIf8FLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-vege-white">
     <!--*********************************************************************? Header Start *********************************************************************-->
@@ -32,7 +34,7 @@
             <div class="flex justify-between items-center">
                 <!--? Header Mobile burger -->
                 <div class="md:hidden block">
-                    <i data-lucide="Menu" class="flex justify-between items-center w-[1.2rem] h-[1.2rem]"></i>
+                    <i data-lucide="Menu" id="btn-menu" class="flex justify-between items-center w-[1.2rem] h-[1.2rem]"></i>
                 </div>
                 <!-- Logo -->
                 <div class="">
@@ -156,7 +158,7 @@
                             <i data-lucide="user-2" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
                         </a> 
                         <!-- Search Icon-->
-                        <button class="bg-transparent border-none">
+                        <button id="toggle-search-button" class="bg-transparent border-none">
                             <i data-lucide="search" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
                         </button>
                         <!-- Faw Icon -->
@@ -164,16 +166,16 @@
                             <i data-lucide="heart" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse "></i>
                         </a>
                         <!-- Basket Icon -->
-                        <a href="" class="relative">
-                            <i data-lucide="shopping-cart" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
-                            <span class="text-vege-white flex text-center justify-center absolute -top-[.5625rem] -right-[.5625rem] w-4 h-4 bg-vege-red rounded-full text-[.6rem] leading-4 hover:animate-pulse">0</span>
+                        <a href="card.html" class="relative header-cart-link">
+                            <i data-lucide="shopping-cart" class=" md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
+                            <span class="header-cart-count text-vege-white flex text-center justify-center absolute -top-[.5625rem] -right-[.5625rem] w-4 h-4 bg-vege-red rounded-full text-[.6rem] leading-4 hover:animate-pulse">0</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
         <!--? Header Mobile Links -->
-        <nav class="md:hidden fixed -left-96 top-0">
+        <nav class="md:hidden fixed -left-96 top-0 z-30" id="sidebar">
             <ul class="absolute border-r-2 border-vege-grey bg-vege-white  h-screen top-0 start-0 flex flex-col items-start pt-20 gap-16 py-[50px] px-[75px] text-vege-black text-sm font-medium uppercase ">
                 <li class="relative  items-center group inline-block">
                     <a href="#" class="relative hover:text-vege-blue duration-500">
@@ -274,15 +276,14 @@
                         CONTACT
                     </a>
                 </li>
-                <i class="absolute top-2 end-2 cursor-pointer" data-lucide="chevron-left"></i>
+                <i class="absolute top-2 end-2 cursor-pointer" id="close-sidebar" data-lucide="chevron-left"></i>
             </ul>
         </nav>
         <!--? Header Mobile Links -->
     </header>
     <!--*********************************************************************! Header End *********************************************************************-->
-    
     <!--*********************************************************************? Modal Search Start *********************************************************************-->
-    <div class="invisible  absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
+    <div id="modal-search" class="invisible z-50  absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
         <div class="w-96 md:max-w-[800px] md:w-full h-auto bg-vege-white z-50 fixed p-8 rounded-md drop-shadow-2xl">
             <h3 class="font-semibold text-3xl normal-case">Search for products</h3>
             <p class="text-sm text-opacity-80 pb-4 border-vege-grey">Start typing to see products you are looking for.</p>
@@ -332,7 +333,7 @@
                     </a>
                 </div>
             </div>
-            <i class="absolute top-2 end-2 cursor-pointer" data-lucide="x-circle"></i>
+            <i id="btn-modal-search-close" class="absolute top-2 end-2 cursor-pointer" data-lucide="x-circle"></i>
         </div>
     </div>
     <!--*********************************************************************! Modal Search End *********************************************************************-->
@@ -368,28 +369,39 @@
                         <div class="w-2/4 pr-4 mb-4">
                             <!-- single image wrapper -->
                             <div class="w-full">
-                                <img class="hover:cursor-zoom-in" src="img/products/product2/1.png" alt="">
+                                <img class="hover:cursor-zoom-in" src="img/products/product2/1.png" alt="" id="single-image">
                             </div>
                             <!-- product tump -->
-                            <div class="">
-                                <!-- gallery thumps -->
-                                <ol class="flex gap-3 mt-2">
-                                    <li class=" cursor-pointer flex">
-                                        <img class="border border-transparent active:border-vege-red active:border hover:border hover:border-vege-black hover:animate-pulse duration-300 " src="img/products/product2/1.png" alt="">
-                                    </li>
-                                    <li class=" cursor-pointer flex">
-                                        <img class="border border-transparent hover:border hover:border-vege-black hover:animate-pulse duration-300 " src="img/products/product2/2.png" alt="">
-                                    </li>
-                                    <li class=" cursor-pointer flex">
-                                        <img class="border border-transparent hover:border hover:border-vege-black hover:animate-pulse duration-300 " src="img/products/product2/3.png" alt="">
-                                    </li>
-                                </ol>
+                            <div class="product-thumb glide relative">
+                                <div class="glide__track" data-glide-el="track">
+                                    <!-- gallery thumps -->
+                                    <ol class="gap-3 mt-2 galler-thumbs glide__slides ">
+                                        <li class=" cursor-pointer glide__slide">
+                                            <img class="border border-transparent active:border-vege-red active:border hover:border hover:border-vege-black hover:animate-pulse duration-300 " src="img/products/product2/1.png" alt="">
+                                        </li>
+                                        <li class=" cursor-pointer glide__slide">
+                                            <img class="border border-transparent active:border-vege-red active:border hover:border hover:border-vege-black hover:animate-pulse duration-300 " src="img/products/product2/1.png" alt="">
+                                        </li>
+                                        <li class=" cursor-pointer glide__slide">
+                                            <img class="border border-transparent active:border-vege-red active:border hover:border hover:border-vege-black hover:animate-pulse duration-300 " src="img/products/product2/1.png" alt="">
+                                        </li>
+                                    </ol>
+                                    <div class="glide__arrows" data-glide-el="controls">
+                                        <button class="glide__arrow glide__arrow--left absolute top-1/2" data-glide-dir="<">
+                                            <i data-lucide="chevron-left" class="md:w-6 md:h-6 textwhite  hover:bg-vege-red bg-vege-blue rounded-full duration-300 opacity-90 hover:opacity-100"></i>
+                                        </button>
+                                        <button class="glide__arrow glide__arrow--right absolute right-0 top-1/2" data-glide-dir=">">
+                                            <i data-lucide="chevron-right"class="md:w-6 md:h-6 textwhite  hover:bg-vege-red bg-vege-blue rounded-full duration-300 opacity-90 hover:opacity-100"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                         <!-- product info -->
                         <div class=" pl-4">
                             <!-- product-title -->
-                            <h1 class="text-xl normal-case font-medium">
+                            <h1 class="text-2xl normal-case font-bold product-title">
                                 Ridley High Waist
                             </h1>
                             <!-- product review -->
@@ -405,9 +417,9 @@
                                 <span class="text-xs font-medium opacity-60">2 reviews</span>
                             </div>
                             <!-- product price  -->
-                            <div class="flex items-center gap-2">
-                                <s class="text-lg text-vege-grey">$165</s>
-                                <strong class="text-lg">$210</strong>
+                            <div class="flex items-center gap-2 product-price">
+                                <s class="text-lg text-vege-grey old-price ">$210</s>
+                                <strong class="text-lg new-price">$165</strong>
                             </div>
                             <!-- product description -->
                             <div class="text-sm leading-6 my-4">
@@ -1029,6 +1041,11 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script>lucide.createIcons();</script>
     <!--? main js  -->
-    <script src="/src/js/main.js"></script>
+    <script src="/src/js/main.js" type="module"></script>
+    <!--? single product js  -->
+    <script src="/src/js/single-product.js"></script>
+    <!--? Glide js  -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="/src/js/glide.js" type="module"></script>
 </body>
 </html>
