@@ -29,6 +29,17 @@ function addToCart() {
     });
 }
 
+function productRoute() {
+    const productLinks = document.querySelectorAll('.product-link');
+    productLinks.forEach((button) => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const id = e.target.dataset.id;
+            localStorage.setItem('productId', JSON.stringify(this.dataset.id));
+            window.location.href = '/src/single-product.html';
+        });
+    });
+}
 
 function productsFunc() {
     const productsContainer = document.getElementById('product-list');
@@ -85,7 +96,7 @@ function productsFunc() {
                         <i class="bi bi-heart text-vege-white"></i>
                     </button>
                     <button class="bg-vege-black inline-block px-2 py-1 rounded-md hover:opacity-70 duration-300 ">
-                        <a href="">
+                        <a href="" class="product-link" data-id=${item.id}>
                             <i class="bi bi-eye text-vege-white"></i>
                         </a>
                     </button>
@@ -102,6 +113,7 @@ function productsFunc() {
         addToCart();
     });
     product1();
+    productRoute()
   }
  
      export default productsFunc;
