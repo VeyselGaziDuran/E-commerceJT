@@ -1,3 +1,6 @@
+import { thumbsActiveFunc } from "/src/js/single-product/thumbsActive.js";
+import { singleThumbs } from "/src/js/glide.js";
+
 const productId = localStorage.getItem('productId')
 ? JSON.parse(localStorage.getItem('productId'))
 : localStorage.setItem('productId', JSON.stringify(1));
@@ -24,3 +27,18 @@ oldPriceDOM.innerHTML = findProduct.price.oldPrice.toFixed(2);
 const singleImageDOM = document.querySelector('#single-image');
 
 singleImageDOM.src = findProduct.img.singleImage;
+
+// Product Thumbs
+
+const galleryDOM = document.querySelector('.gallery-thumbs');
+let result = '';
+findProduct.img.thumbs.forEach((item) => {
+    result += `
+    <li class=" cursor-pointer glide__slide">
+        <img class="img-fluid border border-transparent active:border-vege-red active:border hover:border hover:border-vege-black hover:animate-pulse duration-300 " src="${item}" alt="">
+    </li>
+    `;
+});
+galleryDOM.innerHTML = result;
+singleThumbs() 
+thumbsActiveFunc()
