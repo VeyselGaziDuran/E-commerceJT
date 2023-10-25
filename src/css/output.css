@@ -1694,6 +1694,10 @@ p {
   --tw-text-opacity: 0.8;
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .opacity-0 {
   opacity: 0;
 }

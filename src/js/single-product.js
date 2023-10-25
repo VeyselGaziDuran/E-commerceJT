@@ -3,6 +3,7 @@ import { singleThumbs } from "/src/js/glide.js";
 import { zoomFunc } from "/src/js/single-product/zoom.js";
 import { colorsFunc } from "/src/js/single-product/colors.js";
 import { valuesFunc } from "/src/js/single-product/values.js";
+import { tabsFunc } from '/src/js/single-product/tabs.js';
 
 
 const productId = localStorage.getItem('productId')
@@ -49,6 +50,7 @@ thumbsActiveFunc()
 zoomFunc()
 colorsFunc()
 valuesFunc()
+tabsFunc()
 
 // Add to cart
 let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
