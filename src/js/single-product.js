@@ -1,5 +1,7 @@
 import { thumbsActiveFunc } from "/src/js/single-product/thumbsActive.js";
 import { singleThumbs } from "/src/js/glide.js";
+import { zoomFunc } from "/src/js/single-product/zoom.js";
+
 
 const productId = localStorage.getItem('productId')
 ? JSON.parse(localStorage.getItem('productId'))
@@ -42,3 +44,4 @@ findProduct.img.thumbs.forEach((item) => {
 galleryDOM.innerHTML = result;
 singleThumbs() 
 thumbsActiveFunc()
+zoomFunc()
