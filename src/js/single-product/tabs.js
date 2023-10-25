@@ -13,12 +13,10 @@ function tabsFunc() {
     `;
     document.head.appendChild(style);
 
-    // Tüm sekme içeriklerini gizle
     tabContents.forEach(content => {
         content.style.display = 'none';
     });
 
-    // Sayfa yüklendiğinde sadece "Description" sekmesini göster ve altını çiz
     const initialTab = document.getElementById('desc');
     initialTab.style.display = 'block';
     initialTab.classList.add('active');
@@ -27,20 +25,16 @@ function tabsFunc() {
         btnTab.addEventListener('click', (e) => {
             e.preventDefault();
 
-            // Tüm sekme düğmelerinden 'active' sınıfını kaldır
             btnTabs.forEach(btn => {
                 btn.classList.remove('active');
             });
 
-            // Tıklanan sekme düğmesine 'active' sınıfını ekle
             e.target.classList.add('active');
 
-            // Tüm sekme içeriklerini gizle
             tabContents.forEach(content => {
                 content.style.display = 'none';
             });
 
-            // İlgili sekme içeriğini göster
             const dataTab = e.target.getAttribute('data-tab');
             const tabContent = document.getElementById(dataTab);
             if (tabContent) {
