@@ -49,3 +49,32 @@ thumbsActiveFunc()
 zoomFunc()
 colorsFunc()
 valuesFunc()
+
+// Add to cart
+let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
+const btnAddToCart = document.getElementById('add-to-cart');
+const quantityDOM = document.getElementById('product-quantity');
+let cartItems = document.querySelector('.header-cart-count');
+
+btnAddToCart.addEventListener('click', () => {
+  const quantityToAdd = Number(quantityDOM.value);
+  if (!isNaN(quantityToAdd) && quantityToAdd > 0) {
+    for (let i = 0; i < quantityToAdd; i++) {
+      addProductToCart();
+    }
+  }
+});
+
+function addProductToCart() {
+  cart.push({ ...findProduct, quantity: 1 });
+  localStorage.setItem('cart', JSON.stringify(cart));
+  cartItems.innerHTML = cart.length;
+
+  updateTotalQuantity(1);
+}
+
+function updateTotalQuantity(quantityToAdd) {
+  const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
+  cartItems.innerHTML = totalQuantity;
+}
+

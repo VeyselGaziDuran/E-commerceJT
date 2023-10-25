@@ -7,9 +7,7 @@ let products =  localStorage.getItem('products')
 let cart = localStorage.getItem('cart') 
         ? JSON.parse(localStorage.getItem('cart')) 
         : [];
-
-
-
+       
 function addToCart() {
     const cartItems = document.querySelector('.header-cart-count');
     const buttons = [...document.getElementsByClassName('add-to-cart')];
