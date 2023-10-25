@@ -1,6 +1,7 @@
 import { thumbsActiveFunc } from "/src/js/single-product/thumbsActive.js";
 import { singleThumbs } from "/src/js/glide.js";
 import { zoomFunc } from "/src/js/single-product/zoom.js";
+import { colorsFunc } from "/src/js/single-product/colors.js";
 
 
 const productId = localStorage.getItem('productId')
@@ -45,3 +46,4 @@ galleryDOM.innerHTML = result;
 singleThumbs() 
 thumbsActiveFunc()
 zoomFunc()
+colorsFunc()
