@@ -4,6 +4,8 @@ import { zoomFunc } from "/src/js/single-product/zoom.js";
 import { colorsFunc } from "/src/js/single-product/colors.js";
 import { valuesFunc } from "/src/js/single-product/values.js";
 import { tabsFunc } from '/src/js/single-product/tabs.js';
+import  commentsFunc  from '/src/js/single-product/comments.js';
+
 
 
 const productId = localStorage.getItem('productId')
@@ -51,6 +53,7 @@ zoomFunc()
 colorsFunc()
 valuesFunc()
 tabsFunc()
+
 
 // Add to cart
 let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
