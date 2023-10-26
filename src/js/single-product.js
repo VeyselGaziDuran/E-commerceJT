@@ -3,8 +3,7 @@ import { singleThumbs } from "/src/js/glide.js";
 import { zoomFunc } from "/src/js/single-product/zoom.js";
 import { colorsFunc } from "/src/js/single-product/colors.js";
 import { valuesFunc } from "/src/js/single-product/values.js";
-import { tabsFunc } from '/src/js/single-product/tabs.js';
-import  commentsFunc  from '/src/js/single-product/comments.js';
+import  tabs  from '/src/js/single-product/tabs.js';
 
 
 
@@ -52,7 +51,8 @@ thumbsActiveFunc()
 zoomFunc()
 colorsFunc()
 valuesFunc()
-tabsFunc()
+tabs()
+
 
 
 // Add to cart
