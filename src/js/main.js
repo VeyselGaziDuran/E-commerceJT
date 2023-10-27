@@ -10,7 +10,7 @@ import search from "/src/js/search.js";
     const data = await photos.json()
 
     data ? localStorage.setItem('products', JSON.stringify(data)) : [];
-    productsFunc();
+    productsFunc(data);
 })()
 
 //!------------------------------- Add Product to LocalStorage End
