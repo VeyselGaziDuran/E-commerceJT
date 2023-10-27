@@ -32,7 +32,7 @@
             <div class="flex justify-between items-center">
                 <!--? Header Mobile burger -->
                 <div class="md:hidden block">
-                    <i data-lucide="Menu" class="flex justify-between items-center w-[1.2rem] h-[1.2rem]"></i>
+                    <i data-lucide="Menu" id="btn-menu" class="flex justify-between items-center w-[1.2rem] h-[1.2rem]"></i>
                 </div>
                 <!-- Logo -->
                 <div class="">
@@ -43,7 +43,7 @@
                     <nav class="">
                         <ul class="flex h-24 text-vege-black gap-8 text-sm font-medium uppercase tracking-wider">
                             <li class="relative flex items-center group">
-                                <a href="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0">
+                                <a href="index.html" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0">
                                     HOME
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </a>
@@ -134,7 +134,7 @@
                                 </div>
                             </li>
                             <li class="relative flex items-center">
-                                <a href="shop.html" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0">
+                                <a href="blog.html" class="relative hover:text-vege-blue duration-500 after:content-[''] after:absolute after:h-0.5 after:bg-vege-blue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center after:bottom-0 after:right-0">
                                     BLOG
                                     <i class="fa-solid fa-chevron-down text-xs hidden"></i>
                                 </a>
@@ -153,10 +153,10 @@
                     <div class="flex md:gap-4 gap-2 items-center">
                     <!-- User Icon -->
                         <a href="account.html">
-                            <i data-lucide="user-2" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black animate-pulse "></i>
+                            <i data-lucide="user-2" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
                         </a> 
                         <!-- Search Icon-->
-                        <button class="bg-transparent border-none">
+                        <button id="toggle-search-button" class="bg-transparent border-none">
                             <i data-lucide="search" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
                         </button>
                         <!-- Faw Icon -->
@@ -164,50 +164,50 @@
                             <i data-lucide="heart" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse "></i>
                         </a>
                         <!-- Basket Icon -->
-                        <a href="" class="relative">
-                            <i data-lucide="shopping-cart" class="md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
-                            <span class="text-vege-white flex text-center justify-center absolute -top-[.5625rem] -right-[.5625rem] w-4 h-4 bg-vege-red rounded-full text-[.6rem] leading-4 hover:animate-pulse">0</span>
+                        <a href="card.html" class="relative header-cart-link">
+                            <i data-lucide="shopping-cart" class=" md:w-5 md:h-5 w-[1.2rem] h-[1.2rem] text-vege-black hover:animate-pulse"></i>
+                            <span class="header-cart-count text-vege-white flex text-center justify-center absolute -top-[.5625rem] -right-[.5625rem] w-4 h-4 bg-vege-red rounded-full text-[.6rem] leading-4 hover:animate-pulse">0</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
         <!--? Header Mobile Links -->
-        <nav class="md:hidden fixed -left-96 top-0">
+        <nav class="md:hidden fixed -left-96 top-0 z-30" id="sidebar">
             <ul class="absolute border-r-2 border-vege-grey bg-vege-white  h-screen top-0 start-0 flex flex-col items-start pt-20 gap-16 py-[50px] px-[75px] text-vege-black text-sm font-medium uppercase ">
                 <li class="relative  items-center group inline-block">
                     <a href="#" class="relative hover:text-vege-blue duration-500">
                         HOME
                     </a>
                     <!--? Menu Dropdown wrapper -->
-                    <div class="absolute top-full -left-7 invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300">
+                    <div class="z-50 absolute top-full -left-7 invisible group-hover:visible opacity-0 group-hover:opacity-100  duration-300">
                         <ul class="w-56 rounded-b-md bg-vege-white border border-vege-grey flex flex-col py-5 text-xs">
                             <li>
-                                <a href="" class="block py-1 px-8 hover:animate-pulse">Home Clean</a>
+                                <a href="#" class="block py-1 px-8 hover:animate-pulse">Home Clean</a>
                             </li>
                             <li>
-                                <a href="" class="block py-1 px-8 hover:animate-pulse">Home Collection</a>
+                                <a href="#" class="block py-1 px-8 hover:animate-pulse">Home Collection</a>
                             </li>
                             <li>
-                                <a href="" class="block py-1 px-8 hover:animate-pulse">Home Minimal</a>
+                                <a href="#" class="block py-1 px-8 hover:animate-pulse">Home Minimal</a>
                             </li>
                             <li>
-                                <a href="" class="block py-1 px-8 hover:animate-pulse">Home Modern</a>
+                                <a href="#" class="block py-1 px-8 hover:animate-pulse">Home Modern</a>
                             </li>
                             <li>
-                                <a href="" class="block py-1 px-8 hover:animate-pulse">Home Parallax</a>
+                                <a href="#" class="block py-1 px-8 hover:animate-pulse">Home Parallax</a>
                             </li>
                             <li>
-                                <a href="" class="block py-1 px-8 hover:animate-pulse">Home Stron</a>  
+                                <a href="#" class="block py-1 px-8 hover:animate-pulse">Home Stron</a>  
                             </li>
                             <li>
-                                <a href="" class="block py-1 px-8 hover:animate-pulse">Home Style</a>
+                                <a href="#" class="block py-1 px-8 hover:animate-pulse">Home Style</a>
                             </li>
                             <li>
-                                <a href="" class="block py-1 px-8 hover:animate-pulse">Home Unique</a>
+                                <a href="#" class="block py-1 px-8 hover:animate-pulse">Home Unique</a>
                             </li>
                             <li>
-                                <a href="" class="block py-1 px-8 hover:animate-pulse">Home RTL</a>
+                                <a href="#" class="block py-1 px-8 hover:animate-pulse">Home RTL</a>
                             </li>
                         </ul>
                     </div>
@@ -265,23 +265,23 @@
                     </div>
                 </li>
                 <li class="relative flex items-center">
-                    <a href="shop.html" class="relative hover:text-vege-blue duration-500 ">
+                    <a href="blog.html" class="relative hover:text-vege-blue duration-500 ">
                         BLOG
                     </a>
                 </li>
                 <li class="relative flex items-center">
-                    <a href="#" class="relative hover:text-vege-blue duration-500">
+                    <a href="contact.html" class="relative hover:text-vege-blue duration-500">
                         CONTACT
                     </a>
                 </li>
-                <i class="absolute top-2 end-2 cursor-pointer" data-lucide="chevron-left"></i>
+                <i class="absolute top-2 end-2 cursor-pointer" id="close-sidebar" data-lucide="chevron-left"></i>
             </ul>
         </nav>
         <!--? Header Mobile Links -->
     </header>
     <!--*********************************************************************! Header End *********************************************************************-->
     <!--*********************************************************************? Modal Search Start *********************************************************************-->
-    <div class="invisible  absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
+    <div id="modal-search" class="invisible z-50  absolute top-0 left-0 w-full h-full flex justify-center items-center after:fixed after:top-0 after:left-0 after:content-[''] after:w-full after:h-full after:bg-vege-black after:opacity-50">
         <div class="w-96 md:max-w-[800px] md:w-full h-auto bg-vege-white z-50 fixed p-8 rounded-md drop-shadow-2xl">
             <h3 class="font-semibold text-3xl normal-case">Search for products</h3>
             <p class="text-sm text-opacity-80 pb-4 border-vege-grey">Start typing to see products you are looking for.</p>
@@ -331,7 +331,7 @@
                     </a>
                 </div>
             </div>
-            <i class="absolute top-2 end-2 cursor-pointer" data-lucide="x-circle"></i>
+            <i id="btn-modal-search-close" class="absolute top-2 end-2 cursor-pointer" data-lucide="x-circle"></i>
         </div>
     </div>
     <!--*********************************************************************! Modal Search End *********************************************************************-->
@@ -653,6 +653,6 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script>lucide.createIcons();</script>
     <!--? main js  -->
-    <script src="/src/main.js"></script>
+    <script src="/src/js/main.js" type="module"></script>
 </body>
 </html>
