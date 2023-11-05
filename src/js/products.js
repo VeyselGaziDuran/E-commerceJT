@@ -1,12 +1,12 @@
-import  product1 from "/src/js/glide.js";
+import product1 from "./glide.js";
 
 
 
-let cart = localStorage.getItem('cart') 
-        ? JSON.parse(localStorage.getItem('cart')) 
-        : [];
-       
-        
+let cart = localStorage.getItem('cart')
+    ? JSON.parse(localStorage.getItem('cart'))
+    : [];
+
+
 function addToCart(products) {
     const cartItems = document.querySelector('.header-cart-count');
     const buttons = [...document.getElementsByClassName('add-to-cart')];
@@ -29,18 +29,18 @@ function addToCart(products) {
 function productRoute() {
     const productLinks = document.querySelectorAll('.product-link');
     productLinks.forEach((button) => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             e.preventDefault();
             const id = e.target.dataset.id;
             localStorage.setItem('productId', JSON.stringify(this.dataset.id));
-            window.location.href = '/src/single-product.html';
+            window.location.href = 'single-product.html';
         });
     });
 }
 
 function productsFunc(products) {
     const productsContainer = document.getElementById('product-list');
-   
+
     let results = '';
 
     products.forEach((item) => {
@@ -106,10 +106,10 @@ function productsFunc(products) {
             </div>
         </li>
         `;
-        productsContainer ? productsContainer.innerHTML = results: '';
+        productsContainer ? productsContainer.innerHTML = results : '';
         addToCart(products);
     });
     product1();
-    productRoute(); 
-  }
-     export default productsFunc;
+    productRoute();
+}
+export default productsFunc;

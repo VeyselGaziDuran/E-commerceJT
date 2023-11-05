@@ -1,21 +1,21 @@
-import { thumbsActiveFunc } from "/src/js/single-product/thumbsActive.js";
-import { singleThumbs } from "/src/js/glide.js";
-import { zoomFunc } from "/src/js/single-product/zoom.js";
-import { colorsFunc } from "/src/js/single-product/colors.js";
-import { valuesFunc } from "/src/js/single-product/values.js";
-import  tabs  from '/src/js/single-product/tabs.js';
+import { thumbsActiveFunc } from "./single-product/thumbsActive.js";
+import { singleThumbs } from "./glide.js";
+import { zoomFunc } from "./single-product/zoom.js";
+import { colorsFunc } from "./single-product/colors.js";
+import { valuesFunc } from "./single-product/values.js";
+import tabs from './single-product/tabs.js';
 
 
 
 const productId = localStorage.getItem('productId')
-? JSON.parse(localStorage.getItem('productId'))
-: localStorage.setItem('productId', JSON.stringify(1));
+  ? JSON.parse(localStorage.getItem('productId'))
+  : localStorage.setItem('productId', JSON.stringify(1));
 
 const product = localStorage.getItem('products')
-? JSON.parse(localStorage.getItem('products'))
-: localStorage.setItem('products', JSON.stringify([]));
+  ? JSON.parse(localStorage.getItem('products'))
+  : localStorage.setItem('products', JSON.stringify([]));
 
-const findProduct = product.find((item) => item.id === Number( productId));
+const findProduct = product.find((item) => item.id === Number(productId));
 
 // Product Title
 const productTitle = document.querySelector('.product-title');
@@ -39,14 +39,14 @@ singleImageDOM.src = findProduct.img.singleImage;
 const galleryDOM = document.querySelector('.gallery-thumbs');
 let result = '';
 findProduct.img.thumbs.forEach((item) => {
-    result += `
+  result += `
     <li class=" cursor-pointer glide__slide">
         <img class="img-fluid border border-transparent active:border-vege-red active:border hover:border hover:border-vege-black hover:animate-pulse duration-300 " src="${item}" alt="">
     </li>
     `;
 });
 galleryDOM.innerHTML = result;
-singleThumbs() 
+singleThumbs()
 thumbsActiveFunc()
 zoomFunc()
 colorsFunc()
